@@ -1,0 +1,285 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://Textures/Kenney/tileGrass1.png" type="Texture" id=1]
+[ext_resource path="res://Textures/Kenney/tileGrass2.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadCornerLL.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadCornerLR.png" type="Texture" id=4]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadCornerUL.png" type="Texture" id=5]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadCornerUR.png" type="Texture" id=6]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadCrossing.png" type="Texture" id=7]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadCrossingRound.png" type="Texture" id=8]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadEast.png" type="Texture" id=9]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadNorth.png" type="Texture" id=10]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadSplitE.png" type="Texture" id=11]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadSplitN.png" type="Texture" id=12]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadSplitS.png" type="Texture" id=13]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadSplitW.png" type="Texture" id=14]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadTransitionE.png" type="Texture" id=15]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadTransitionE_dirt.png" type="Texture" id=16]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadTransitionN.png" type="Texture" id=17]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadTransitionN_dirt.png" type="Texture" id=18]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadTransitionS.png" type="Texture" id=19]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadTransitionS_dirt.png" type="Texture" id=20]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadTransitionW.png" type="Texture" id=21]
+[ext_resource path="res://Textures/Kenney/tileGrass_roadTransitionW_dirt.png" type="Texture" id=22]
+[ext_resource path="res://Textures/Kenney/tileGrass_transitionE.png" type="Texture" id=23]
+[ext_resource path="res://Textures/Kenney/tileGrass_transitionN.png" type="Texture" id=24]
+[ext_resource path="res://Textures/Kenney/tileGrass_transitionS.png" type="Texture" id=25]
+[ext_resource path="res://Textures/Kenney/tileGrass_transitionW.png" type="Texture" id=26]
+[ext_resource path="res://Textures/Kenney/tileSand1.png" type="Texture" id=27]
+[ext_resource path="res://Textures/Kenney/tileSand2.png" type="Texture" id=28]
+[ext_resource path="res://Textures/Kenney/tileSand_roadCornerLL.png" type="Texture" id=29]
+[ext_resource path="res://Textures/Kenney/tileSand_roadCornerLR.png" type="Texture" id=30]
+[ext_resource path="res://Textures/Kenney/tileSand_roadCornerUL.png" type="Texture" id=31]
+[ext_resource path="res://Textures/Kenney/tileSand_roadCornerUR.png" type="Texture" id=32]
+[ext_resource path="res://Textures/Kenney/tileSand_roadCrossing.png" type="Texture" id=33]
+[ext_resource path="res://Textures/Kenney/tileSand_roadCrossingRound.png" type="Texture" id=34]
+[ext_resource path="res://Textures/Kenney/tileSand_roadEast.png" type="Texture" id=35]
+[ext_resource path="res://Textures/Kenney/tileSand_roadNorth.png" type="Texture" id=36]
+[ext_resource path="res://Textures/Kenney/tileSand_roadSplitE.png" type="Texture" id=37]
+[ext_resource path="res://Textures/Kenney/tileSand_roadSplitN.png" type="Texture" id=38]
+[ext_resource path="res://Textures/Kenney/tileSand_roadSplitS.png" type="Texture" id=39]
+[ext_resource path="res://Textures/Kenney/tileSand_roadSplitW.png" type="Texture" id=40]
+
+[node name="TileMap" type="Node2D"]
+
+[node name="tileGrass1" type="Sprite" parent="."]
+
+position = Vector2( 128, 64 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="tileGrass2" type="Sprite" parent="."]
+
+position = Vector2( 64, 64 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="tileGrass_roadCornerLL" type="Sprite" parent="."]
+
+position = Vector2( 448, 256 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="tileGrass_roadCornerLR" type="Sprite" parent="."]
+
+position = Vector2( 384, 256 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="tileGrass_roadCornerUL" type="Sprite" parent="."]
+
+position = Vector2( 320, 256 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="tileGrass_roadCornerUR" type="Sprite" parent="."]
+
+position = Vector2( 256, 256 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="tileGrass_roadCrossing" type="Sprite" parent="."]
+
+position = Vector2( 192, 256 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="tileGrass_roadCrossingRound" type="Sprite" parent="."]
+
+position = Vector2( 128, 256 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="tileGrass_roadEast" type="Sprite" parent="."]
+
+position = Vector2( 64, 256 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="tileGrass_roadNorth" type="Sprite" parent="."]
+
+position = Vector2( 0, 256 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="tileGrass_roadSplitE" type="Sprite" parent="."]
+
+position = Vector2( 448, 192 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="tileGrass_roadSplitN" type="Sprite" parent="."]
+
+position = Vector2( 384, 192 )
+texture = ExtResource( 12 )
+centered = false
+
+[node name="tileGrass_roadSplitS" type="Sprite" parent="."]
+
+position = Vector2( 320, 192 )
+texture = ExtResource( 13 )
+centered = false
+
+[node name="tileGrass_roadSplitW" type="Sprite" parent="."]
+
+position = Vector2( 256, 192 )
+texture = ExtResource( 14 )
+centered = false
+
+[node name="tileGrass_roadTransitionE" type="Sprite" parent="."]
+
+position = Vector2( 192, 192 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="tileGrass_roadTransitionE_dirt" type="Sprite" parent="."]
+
+position = Vector2( 128, 192 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="tileGrass_roadTransitionN" type="Sprite" parent="."]
+
+position = Vector2( 64, 192 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="tileGrass_roadTransitionN_dirt" type="Sprite" parent="."]
+
+position = Vector2( 0, 192 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="tileGrass_roadTransitionS" type="Sprite" parent="."]
+
+position = Vector2( 448, 128 )
+texture = ExtResource( 19 )
+centered = false
+
+[node name="tileGrass_roadTransitionS_dirt" type="Sprite" parent="."]
+
+position = Vector2( 384, 128 )
+texture = ExtResource( 20 )
+centered = false
+
+[node name="tileGrass_roadTransitionW" type="Sprite" parent="."]
+
+position = Vector2( 320, 128 )
+texture = ExtResource( 21 )
+centered = false
+
+[node name="tileGrass_roadTransitionW_dirt" type="Sprite" parent="."]
+
+position = Vector2( 256, 128 )
+texture = ExtResource( 22 )
+centered = false
+
+[node name="tileGrass_transitionE" type="Sprite" parent="."]
+
+position = Vector2( 192, 128 )
+texture = ExtResource( 23 )
+centered = false
+
+[node name="tileGrass_transitionN" type="Sprite" parent="."]
+
+position = Vector2( 128, 128 )
+texture = ExtResource( 24 )
+centered = false
+
+[node name="tileGrass_transitionS" type="Sprite" parent="."]
+
+position = Vector2( 64, 128 )
+texture = ExtResource( 25 )
+centered = false
+
+[node name="tileGrass_transitionW" type="Sprite" parent="."]
+
+position = Vector2( 0, 128 )
+texture = ExtResource( 26 )
+centered = false
+
+[node name="tileSand1" type="Sprite" parent="."]
+
+position = Vector2( 448, 64 )
+texture = ExtResource( 27 )
+centered = false
+
+[node name="tileSand2" type="Sprite" parent="."]
+
+position = Vector2( 448, 0 )
+texture = ExtResource( 28 )
+centered = false
+
+[node name="tileSand_roadCornerLL" type="Sprite" parent="."]
+
+position = Vector2( 384, 64 )
+texture = ExtResource( 29 )
+centered = false
+
+[node name="tileSand_roadCornerLR" type="Sprite" parent="."]
+
+position = Vector2( 384, 0 )
+texture = ExtResource( 30 )
+centered = false
+
+[node name="tileSand_roadCornerUL" type="Sprite" parent="."]
+
+position = Vector2( 320, 64 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="tileSand_roadCornerUR" type="Sprite" parent="."]
+
+position = Vector2( 320, 0 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="tileSand_roadCrossing" type="Sprite" parent="."]
+
+position = Vector2( 256, 64 )
+texture = ExtResource( 33 )
+centered = false
+
+[node name="tileSand_roadCrossingRound" type="Sprite" parent="."]
+
+position = Vector2( 192, 64 )
+texture = ExtResource( 34 )
+centered = false
+
+[node name="tileSand_roadEast" type="Sprite" parent="."]
+
+position = Vector2( 192, 0 )
+texture = ExtResource( 35 )
+centered = false
+
+[node name="tileSand_roadNorth" type="Sprite" parent="."]
+
+position = Vector2( 0, 64 )
+texture = ExtResource( 36 )
+centered = false
+
+[node name="tileSand_roadSplitE" type="Sprite" parent="."]
+
+position = Vector2( 128, 0 )
+texture = ExtResource( 37 )
+centered = false
+
+[node name="tileSand_roadSplitN" type="Sprite" parent="."]
+
+position = Vector2( 256, 0 )
+texture = ExtResource( 38 )
+centered = false
+
+[node name="tileSand_roadSplitS" type="Sprite" parent="."]
+
+position = Vector2( 64, 0 )
+texture = ExtResource( 39 )
+centered = false
+
+[node name="tileSand_roadSplitW" type="Sprite" parent="."]
+
+texture = ExtResource( 40 )
+centered = false
+
+
