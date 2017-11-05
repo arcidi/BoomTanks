@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Tank.gd" type="Script" id=1]
+[ext_resource path="res://Textures/Kenney/tank_blue.png" type="Texture" id=2]
+
+[node name="Tank" type="KinematicBody2D"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "collision" ]
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = PoolVector2Array( -14.5344, -22.6665, 14.2272, -22.8812, 20.2371, -16.442, 20.881, 11.6757, 9.50514, 18.7587, -9.59771, 18.9734, -20.3297, 12.5342, -20.7589, -17.3006 )
+
+
