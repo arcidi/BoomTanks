@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/Tank.gd" type="Script" id=1]
-[ext_resource path="res://Textures/Kenney/tank_blue.png" type="Texture" id=2]
+[ext_resource path="res://Textures/pixel_auto_niebieski.png" type="Texture" id=2]
+[ext_resource path="res://Textures/dzialko_2.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
 
 [node name="Tank" type="KinematicBody2D"]
 
@@ -10,16 +16,25 @@ collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "collision" ]
+_sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Sprite" type="Sprite" parent="."]
 
+scale = Vector2( 0.15, 0.15 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-build_mode = 0
-polygon = PoolVector2Array( -14.5344, -22.6665, 14.2272, -22.8812, 20.2371, -16.442, 20.881, 11.6757, 9.50514, 18.7587, -9.59771, 18.9734, -20.3297, 12.5342, -20.7589, -17.3006 )
+position = Vector2( 0.0100386, -0.203873 )
+scale = Vector2( 1.08212, 2.29868 )
+shape = SubResource( 1 )
+
+[node name="dziako.pnh" type="Sprite" parent="."]
+
+position = Vector2( 0, -7 )
+scale = Vector2( 0.045, 0.045 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
 
 

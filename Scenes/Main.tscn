@@ -19,15 +19,15 @@ position = Vector2( 79, 87 )
 position = Vector2( 281, 92 )
 texture = ExtResource( 2 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="icon"]
+[node name="StaticBody2D" type="Area2D" parent="icon"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="icon/StaticBody2D"]
 
