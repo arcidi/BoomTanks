@@ -1,10 +1,11 @@
 extends KinematicBody2D
 
-var maxSpeed = 350
+var maxSpeed = 600
 var speed = 0
-var acceleration = 150
+var acceleration = 400
 var velocity = Vector2(0,0)
 var stering = 180
+var mass = 100
 
 
 func _ready():
@@ -12,15 +13,15 @@ func _ready():
 
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_up"):
-		speed += acceleration * delta
+		speed += (acceleration - mass) * delta
 	elif Input.is_action_pressed("ui_down"):
-		speed -= acceleration * delta
+		speed -= (acceleration - mass) * delta
 	else:
-		speed -= speed / 30
+		speed -= speed / mass#slow vehicle down if not accelerate
 	if Input.is_action_pressed("ui_left"):
-		rotation_deg -= stering * inverse_lerp(0, maxSpeed, speed) * delta 
+		rotation_deg -= (stering - (mass /2)) * inverse_lerp(0, maxSpeed, speed) * delta 
 	if Input.is_action_pressed("ui_right"):
-		rotation_deg += stering * inverse_lerp(0, maxSpeed, speed) * delta
+		rotation_deg += (stering - (mass /2)) * inverse_lerp(0, maxSpeed, speed) * delta
 	
 	#Clamp doesn't work? Well this is still alfa...
 	if speed > maxSpeed: 
