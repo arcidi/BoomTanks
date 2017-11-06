@@ -1,23 +1,24 @@
 extends Node2D
 
 onready var bullet = load("res://Scenes/Turrets/Bullets/Bullet1.tscn")
-onready var bulletSpawnPos = get_node("BulletSpawnPoint")
+onready var bulletSpawnPos = get_node("BulletSpawnPoint").global_position
 
-
+var fireRate = 10
+var fireCoolDown = float(0)
 
 func _ready():
-	set_process(true)
+	set_physics_process(true)
 
-func _process(delta):
+func _physics_process(delta):
 	look_at(get_global_mouse_position())
-	print(rotation)
+	fireCoolDown -= delta
+	if Input.is_action_pressed("Fire") and fireCoolDown < 0:
+		SpawnBullet()
+		fireCoolDown = float(1) / fireRate
 
-	if Input.is_action_pressed("Fire"):
-		SpawnBullet(bullet)
-
-func SpawnBullet(bullet):
-	bulletSpawnPos = get_node("BulletSpawnPoint")
+func SpawnBullet():
+	bulletSpawnPos = get_node("BulletSpawnPoint").global_position
 	var bull = bullet.instance()
 	get_parent().get_node("Bullet holder").add_child(bull)
-	bull.position = bulletSpawnPos.global_position
-	bull.velocity = bulletSpawnPos.global_position - global_position
+	bull.position = bulletSpawnPos
+	bull.velocity = bulletSpawnPos - global_position

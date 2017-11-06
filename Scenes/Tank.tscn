@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scripts/Tank.gd" type="Script" id=1]
 [ext_resource path="res://Textures/pixel_auto_niebieski.png" type="Texture" id=2]
-[ext_resource path="res://Textures/dzialko_2.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Turrets/Turret1.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -26,15 +26,12 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-position = Vector2( 0.0100386, -0.203873 )
-scale = Vector2( 1.08212, 2.29868 )
+position = Vector2( -0.120427, -0.981063 )
+scale = Vector2( 1.63049, 3.39164 )
 shape = SubResource( 1 )
 
-[node name="dziako.pnh" type="Sprite" parent="."]
+[node name="Turret1" parent="." instance=ExtResource( 3 )]
 
-position = Vector2( 0, -7 )
-scale = Vector2( 0.045, 0.045 )
-texture = ExtResource( 3 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 0, -11 )
 
 

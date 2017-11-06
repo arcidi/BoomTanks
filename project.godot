@@ -17,8 +17,10 @@ config/icon="res://icon.png"
 [display]
 
 window/size/width=800
-window/stretch/mode="2d"
-window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "painter" )
 
 [gdnative]
 

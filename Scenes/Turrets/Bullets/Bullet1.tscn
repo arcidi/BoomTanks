@@ -11,23 +11,36 @@ extents = Vector2( 10, 10 )
 [node name="Bullet1" type="KinematicBody2D"]
 
 scale = Vector2( 2, 2 )
-input_pickable = false
+input_pickable = true
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform", "collision" ]
+_sections_unfolded = [ "Collision", "Pickable", "Transform", "collision" ]
 
 [node name="Sprite" type="Sprite" parent="."]
 
-modulate = Color( 0.894531, 0, 0, 1 )
+modulate = Color( 0.921875, 0, 1, 1 )
+self_modulate = Color( 0.945312, 0, 1, 1 )
 texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 150, 150, 1, 1 )
-_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+
+visible = false
 position = Vector2( 0.00789393, -0.00888908 )
 scale = Vector2( 0.0505689, 0.0505689 )
 shape = SubResource( 1 )
