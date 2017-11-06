@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Textures/dziako.pnh.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Bullet.gd" type="Script" id=1]
+[ext_resource path="res://Textures/dziako.pnh.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -14,12 +15,13 @@ input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 1 )
 _sections_unfolded = [ "Transform", "collision" ]
 
 [node name="Sprite" type="Sprite" parent="."]
 
 modulate = Color( 0.894531, 0, 0, 1 )
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 150, 150, 1, 1 )
 _sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]

@@ -1,28 +1,35 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Textures/dzialko_2.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Turrets/Bullets/Bullet1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Turret.gd" type="Script" id=1]
+[ext_resource path="res://Textures/dzialko_2.png" type="Texture" id=2]
 
-[node name="Turret1" type="KinematicBody2D"]
+[node name="Turret1" type="Node2D"]
+
+position = Vector2( 110.719, 79.1337 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Turret" type="KinematicBody2D" parent="."]
 
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Pause", "Transform", "collision" ]
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="Sprite" parent="Turret"]
 
+rotation = -1.5708
 scale = Vector2( 0.045, 0.045 )
-texture = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
+texture = ExtResource( 2 )
+offset = Vector2( 0, 74 )
+_sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="BulletSpawnPoint" type="Position2D" parent="."]
+[node name="BulletSpawnPoint" type="Position2D" parent="Turret"]
 
-position = Vector2( 0, 10 )
+position = Vector2( 14, 0 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="Bullet1" parent="." instance=ExtResource( 2 )]
-
-position = Vector2( 0.0484943, 9.98983 )
+[node name="Bullet holder" type="Node" parent="."]
 
 
