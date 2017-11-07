@@ -142,6 +142,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 2 )
 expand = true
+stretch_mode = 0
 script = SubResource( 1 )
 _sections_unfolded = [ "Anchor", "Margin", "Rect", "Textures", "Visibility" ]
 

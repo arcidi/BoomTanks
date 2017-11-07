@@ -17,7 +17,7 @@ func _physics_process(delta):
 	elif Input.is_action_pressed("ui_down"):
 		speed -= (acceleration - mass) * delta
 	else:
-		speed -= speed / mass#slow vehicle down if not accelerate
+		speed -= speed / mass #slow vehicle down if not accelerate
 	if Input.is_action_pressed("ui_left"):
 		rotation_deg -= (stering - (mass /2)) * inverse_lerp(0, maxSpeed, speed) * delta 
 	if Input.is_action_pressed("ui_right"):
