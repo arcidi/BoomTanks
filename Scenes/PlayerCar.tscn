@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Scripts/Car.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/PlayerCar.gd" type="Script" id=1]
 [ext_resource path="res://Textures/pixel_auto_niebieski.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Turrets/Turret1.tscn" type="PackedScene" id=3]
 
@@ -9,7 +9,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Tank" type="KinematicBody2D"]
+[node name="PlayerCar" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
