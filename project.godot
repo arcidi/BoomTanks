@@ -14,9 +14,16 @@ config/name="BoomCrafts"
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+global="*res://Scripts/global.gd"
+
 [display]
 
 window/size/width=800
+window/size/height=270
+window/stretch/aspect="keep"
+window/stretch/shrink="1"
 
 [editor_plugins]
 

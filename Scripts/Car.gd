@@ -2,6 +2,7 @@ extends "res://Scripts/Vehicle.gd"
 
 var speed = 0
 var velocity = Vector2(0,0)
+var simulatedRotation
 
 
 func _ready():
@@ -14,6 +15,8 @@ func _ready():
 	brakeForce = 400
 	isAccelerating = false
 
+
+
 func _physics_process(delta):
 	#Clamp doesn't work? Well this is still alfa...
 	if speed > maxSpeed:
@@ -22,7 +25,7 @@ func _physics_process(delta):
 		speed = -maxSpeed
 	if !isAccelerating:
 		speed -= speed / mass #slow vehicle down if not accelerate
-	velocity = Vector2(sin(-rotation), cos(-rotation)) * speed * delta #Change velocity vector according to rotation
+	Rotate(delta)
 	move_and_collide(velocity)
 	isAccelerating = false
 
@@ -39,3 +42,6 @@ func Turn(vector, delta): #Turn car in some direction
 
 func Brake(delta):
 	speed -= (brakeForce - (mass / traction))  * delta
+
+func Rotate(delta): #Change velocity vector according to rotation
+	velocity = Vector2(sin(-rotation), cos(-rotation)) * speed * delta
