@@ -3,9 +3,8 @@ extends "res://Scripts/Car.gd"
 func _ready():
 	set_physics_process(true)
 
-slave func move_car(acc, turn, delta):
-	Accelerate(acc, delta)
-	Turn(turn, delta)
+slave func move_car(trans):
+	transform = trans
 
 func _physics_process(delta):
 	var turn = 0
@@ -23,4 +22,4 @@ func _physics_process(delta):
 		
 		Accelerate(acc, delta)
 		Turn(turn, delta)
-		rpc_unreliable("move_car", acc, turn, delta)
+		rpc_unreliable("move_car", transform)
