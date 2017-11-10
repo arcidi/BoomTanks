@@ -19,14 +19,14 @@ _sections_unfolded = [ "Pause", "Transform", "collision" ]
 [node name="Sprite" type="Sprite" parent="Turret"]
 
 rotation = -1.5708
-scale = Vector2( 0.045, 0.045 )
+scale = Vector2( 0.004, 0.004 )
 texture = ExtResource( 2 )
 offset = Vector2( 0, 74 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="BulletSpawnPoint" type="Position2D" parent="Turret"]
 
-position = Vector2( 14, 0 )
+position = Vector2( 1.35671, -0.00354934 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="Bullet holder" type="Node" parent="."]

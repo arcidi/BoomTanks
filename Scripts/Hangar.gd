@@ -1,5 +1,7 @@
 extends Control
 
+#This probably will be deleted
+
 var projectResolution = Vector2(ProjectSettings.get("display/window/size/width"),ProjectSettings.get("display/window/size/height"))
 onready var vehicleViewPanel = get_node("VehicleView Panel")
 onready var itemSelectPanel = get_node("ItemSelect Panel")

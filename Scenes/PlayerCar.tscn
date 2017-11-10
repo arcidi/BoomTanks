@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Scripts/PlayerCar.gd" type="Script" id=1]
-[ext_resource path="res://Textures/pixel_auto_niebieski.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Car.gd" type="Script" id=1]
+[ext_resource path="res://Textures/tank_car.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Turrets/Turret1.tscn" type="PackedScene" id=3]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -22,19 +23,18 @@ _sections_unfolded = [ "Collision", "Transform", "collision" ]
 
 [node name="Sprite" type="Sprite" parent="."]
 
-scale = Vector2( 0.15, 0.15 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-position = Vector2( -0.120427, -0.981063 )
-scale = Vector2( 1.63049, 3.39164 )
+position = Vector2( 0.509071, -4.29409 )
+scale = Vector2( 1.53307, 2.66271 )
 shape = SubResource( 1 )
 
 [node name="Turret1" parent="." instance=ExtResource( 3 )]
 
-position = Vector2( 0, -11 )
+position = Vector2( 0.109575, -1.22194 )
 
 [node name="Name" type="Label" parent="."]
 
@@ -42,10 +42,11 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -33.0
-margin_top = -15.0
-margin_right = 33.0
-margin_bottom = -1.0
+margin_left = -3.0
+margin_top = -4.0
+margin_right = 63.0
+margin_bottom = 10.0
+rect_scale = Vector2( 0.08, 0.08 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -55,5 +56,29 @@ text = "Server guy"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+anchor_mode = 1
+rotating = false
+current = false
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = false
+smoothing_speed = 5.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
 
 

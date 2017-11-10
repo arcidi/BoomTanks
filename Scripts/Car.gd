@@ -3,7 +3,7 @@ extends "res://Scripts/Vehicle.gd"
 var speed = 0
 var velocity = Vector2(0,0)
 var simulatedRotation
-
+var new_player_input = false
 
 func _ready():
 	set_physics_process(true)
@@ -18,26 +18,44 @@ func _ready():
 
 
 func _physics_process(delta):
-	#Clamp doesn't work? Well this is still alfa...
-	if speed > maxSpeed:
+	if speed > maxSpeed: #Clamp funcion is probably doesn't work in this version of godot
 		speed = maxSpeed
 	elif speed < -maxSpeed:
 		speed = -maxSpeed
-	if !isAccelerating:
-		speed -= speed / mass #slow vehicle down if not accelerate
+	
+	#Player input
+	if is_network_master():
+		new_player_input = false
+		if Input.is_action_pressed("ui_up"):
+			Accelerate(1, delta)
+		elif Input.is_action_pressed("ui_down"):
+			Accelerate(-1, delta)
+		else: #slow vehicle down if not accelerate
+			speed -= speed / mass 
+		
+		if Input.is_action_pressed("ui_left"):
+			Turn(-1, delta)
+		elif Input.is_action_pressed("ui_right"):
+			Turn(1, delta)
+		if new_player_input:#If there was new input, send this to players!
+			rset("velocity", velocity) #Also, rset can couse big ping, if it does, experiment with rset_unreliable
+	
 	Rotate(delta)
 	move_and_collide(velocity)
-	isAccelerating = false
+	rpc_unreliable("move_car", transform)
 
-func Accelerate(vector, delta):
-	if vector == -1 && speed > 0:
+slave func move_car(trans):
+	transform = trans
+
+func Accelerate(acc_Axis, delta):
+	new_player_input = true
+	if acc_Axis < 0 && speed > 0: #If someone pressed back arrow, and his velocity is bigger than 0, start braking!
 		Brake(delta)
-		isAccelerating = false
 	else:
-		speed += (acceleration - mass) * vector * delta
-		isAccelerating = true
+		speed += (acceleration - mass) * acc_Axis * delta
 
 func Turn(vector, delta): #Turn car in some direction
+	new_player_input = true
 	rotation_deg += (stering - (mass /2)) * inverse_lerp(0, maxSpeed, speed) * vector * delta
 
 func Brake(delta):
