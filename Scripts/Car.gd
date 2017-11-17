@@ -8,9 +8,9 @@ var new_player_input = false
 func _ready():
 	set_physics_process(true)
 	maxSpeed = 600
-	acceleration = 400
-	stering = 180
-	mass = 100
+	acceleration = 24000
+	stering = 18000
+	mass = 400
 	traction = 100
 	brakeForce = 400
 	isAccelerating = false
@@ -52,14 +52,14 @@ func Accelerate(acc_Axis, delta):
 	if acc_Axis < 0 && speed > 0: #If someone pressed back arrow, and his velocity is bigger than 0, start braking!
 		Brake(delta)
 	else:
-		speed += (acceleration - mass) * acc_Axis * delta
+		speed += (acceleration / mass) * acc_Axis * delta
 
 func Turn(vector, delta): #Turn car in some direction
 	new_player_input = true
-	rotation_deg += (stering - (mass /2)) * inverse_lerp(0, maxSpeed, speed) * vector * delta
+	rotation_deg += (stering / (mass /2)) * inverse_lerp(maxSpeed, 1, speed) * vector * delta
 
 func Brake(delta):
-	speed -= (brakeForce - (mass / traction))  * delta
+	speed -= (brakeForce / (mass / traction))  * delta
 
 func Rotate(delta): #Change velocity vector according to rotation
 	velocity = Vector2(sin(-rotation), cos(-rotation)) * speed * delta
