@@ -13,8 +13,8 @@ var new_player_input = false
 func _ready():
 	set_physics_process(true)
 	maxSpeed = 600
-	acceleration = 24000
-	stering = 18000
+	acceleration = 300
+	stering = 200
 	mass = 400
 	traction = 100
 	brakeForce = 400
@@ -52,12 +52,12 @@ sync func Accelerate(acc_Axis, delta):
 	if acc_Axis < 0 && speed > 0: #If someone pressed back arrow, and his velocity is bigger than 0, start braking!
 		Brake(delta)
 	else:
-		speed += (acceleration / mass) * acc_Axis * delta
+		speed += (pow(acceleration, 2) / mass) * acc_Axis * delta
 
 sync func Turn(vector, delta): #Turn car in some direction
 	vector =  clamp(vector, -1, 1) #Make sure that player don't try to cheat!
 	new_player_input = true
-	rotation_deg += (stering / (mass /2)) * vector * delta
+	rotation_deg += (pow(stering, 2) / mass) * vector * delta
 
 func Brake(delta):
 	speed -= (brakeForce / (mass / traction))  * delta
