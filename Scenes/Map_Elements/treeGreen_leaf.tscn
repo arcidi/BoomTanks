@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Textures/Maps/treeGreen_leaf.png" type="Texture" id=1]
+
+[node name="treeGreen_leaf" type="Sprite"]
+
+position = Vector2( 1024, 0 )
+texture = ExtResource( 1 )
+centered = false
+
+
