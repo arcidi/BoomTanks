@@ -31,21 +31,23 @@ func _physics_process(delta):
 			rotation += clamp(velocity.y, rotation_speed, max_velocity) * delta
 			if velocity.y > max_velocity * 0.7:
 				brake(0.6, delta)
-	else:
+	if is_acc_pressed || is_brake_pressed:
 		if is_acc_pressed:
 			velocity.y += acceleration * delta
-		else: 
-			brake(1, delta)
 		if is_brake_pressed:
-			velocity.y -= 2 * delta
+			velocity.y -= acceleration * delta
+	else: brake(1, delta)
 	
 	velocity = Vector2(0, clamp(velocity.y, -max_velocity, max_velocity))
 	move_and_collide(velocity.rotated(rotation))
-	print(velocity)
+	
+	if get_tree().is_network_server(): #If someone lost connection, then he will have this from server.
+		rset_unreliable("transform", transform)
+		rset_unreliable("velocity", velocity)
 
 func brake(force, delta):
 	velocity.y -= velocity.y * (delta * force) 
-	if velocity.y < 0.03:
+	if (velocity.y < 0.03 && velocity.y > 0) || (velocity.y > -0.03 && velocity.y < 0) :
 		velocity.y = 0
 
 func _input(event):
