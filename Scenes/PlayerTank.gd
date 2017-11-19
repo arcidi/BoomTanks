@@ -7,7 +7,7 @@ extends KinematicBody2D
 
 
 var velocity = Vector2(0,0)
-var rotation_speed = 1;
+var rotation_speed = 2
 var max_velocity = 3
 var acceleration = 2
 
@@ -22,19 +22,29 @@ func _ready():
 
 func _physics_process(delta):
 	#procces input
-	if is_left_pressed:
-		rotation -= rotation_speed * delta
-	if is_right_pressed:
-		rotation += rotation_speed * delta
-	if is_acc_pressed:
-		velocity.y += acceleration * delta
-	else: velocity.y -= velocity.y * (delta * 2) 
-	if is_brake_pressed:
-		velocity.y -= 1 * delta
+	if is_left_pressed || is_right_pressed:
+		if is_left_pressed:
+			rotation -= clamp(velocity.y, rotation_speed, max_velocity) * delta
+			brake(delta)
+		if is_right_pressed:
+			rotation += clamp(velocity.y, rotation_speed, max_velocity) * delta
+			brake(delta)
+	else:
+		if is_acc_pressed:
+			velocity.y += acceleration * delta
+		else: 
+			brake(delta)
+		if is_brake_pressed:
+			velocity.y -= 1 * delta
 	
 	velocity = Vector2(0, clamp(velocity.y, -max_velocity, max_velocity))
 	move_and_collide(velocity.rotated(rotation))
 	print(velocity)
+
+func brake(delta):
+	velocity.y -= velocity.y * (delta * 2) 
+	if velocity.y < 0.03:
+		velocity.y = 0
 
 func _input(event):
 	if is_network_master():
