@@ -26,22 +26,23 @@ func _physics_process(delta):
 
 
 func _input(event):
-	if event.is_action_pressed("ui_up"):
-		rset("is_acc_pressed", true)
-	if event.is_action_released("ui_up"):
-		rset("is_acc_pressed", false)
-	
-	if event.is_action_pressed("ui_down"):
-		rset("is_brake_pressed", true)
-	if event.is_action_released("ui_down"):
-		rset("is_brake_pressed", false)
-	
-	if event.is_action_pressed("ui_left"):
-		rset("is_left_pressed", true)
-	if event.is_action_released("ui_left"):
-		rset("is_left_pressed", false)
+	if is_network_master():
+		if event.is_action_pressed("ui_up"):
+			rset("is_acc_pressed", true)
+		if event.is_action_released("ui_up"):
+			rset("is_acc_pressed", false)
 		
-	if event.is_action_pressed("ui_right"):
-		rset("is_right_pressed", true)
-	if event.is_action_released("ui_right"):
-		rset("is_right_pressed", false)
+		if event.is_action_pressed("ui_down"):
+			rset("is_brake_pressed", true)
+		if event.is_action_released("ui_down"):
+			rset("is_brake_pressed", false)
+		
+		if event.is_action_pressed("ui_left"):
+			rset("is_left_pressed", true)
+		if event.is_action_released("ui_left"):
+			rset("is_left_pressed", false)
+			
+		if event.is_action_pressed("ui_right"):
+			rset("is_right_pressed", true)
+		if event.is_action_released("ui_right"):
+			rset("is_right_pressed", false)
