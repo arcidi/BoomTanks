@@ -85,7 +85,7 @@ remote func spawn_players():
 	var x = 0
 	for cars in global.players_info: #Spawn car for each player
 		x += 1
-		var car = preload("res://Scenes/PlayerCar.tscn").instance()
+		var car = preload("res://Scenes/PlayerTank.tscn").instance()
 		car.set_name(str(cars))
 		car.set_network_master(cars)
 		car.position += Vector2(50, 0) * x #We don't want spawn all cars in this same position!

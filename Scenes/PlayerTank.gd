@@ -6,9 +6,10 @@ extends KinematicBody2D
 #Server sends rpc_unreliable position
 
 
-var velocity = Vector2(0,1)
+var velocity = Vector2(0,0)
 var rotation_speed = 1;
-
+var max_velocity = 3
+var acceleration = 2
 
 sync var is_left_pressed = false
 sync var is_right_pressed = false
@@ -20,10 +21,20 @@ func _ready():
 	set_process_input(true)
 
 func _physics_process(delta):
+	#procces input
+	if is_left_pressed:
+		rotation -= rotation_speed * delta
+	if is_right_pressed:
+		rotation += rotation_speed * delta
+	if is_acc_pressed:
+		velocity.y += acceleration * delta
+	else: velocity.y -= velocity.y * (delta * 2) 
+	if is_brake_pressed:
+		velocity.y -= 1 * delta
 	
-	
+	velocity = Vector2(0, clamp(velocity.y, -max_velocity, max_velocity))
 	move_and_collide(velocity.rotated(rotation))
-
+	print(velocity)
 
 func _input(event):
 	if is_network_master():
