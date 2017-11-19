@@ -25,24 +25,26 @@ func _physics_process(delta):
 	if is_left_pressed || is_right_pressed:
 		if is_left_pressed:
 			rotation -= clamp(velocity.y, rotation_speed, max_velocity) * delta
-			brake(delta)
+			if velocity.y > max_velocity * 0.7:
+				brake(0.8, delta)
 		if is_right_pressed:
 			rotation += clamp(velocity.y, rotation_speed, max_velocity) * delta
-			brake(delta)
+			if velocity.y > max_velocity * 0.7:
+				brake(0.8, delta)
 	else:
 		if is_acc_pressed:
 			velocity.y += acceleration * delta
 		else: 
-			brake(delta)
+			brake(1, delta)
 		if is_brake_pressed:
-			velocity.y -= 1 * delta
+			velocity.y -= 2 * delta
 	
 	velocity = Vector2(0, clamp(velocity.y, -max_velocity, max_velocity))
 	move_and_collide(velocity.rotated(rotation))
 	print(velocity)
 
-func brake(delta):
-	velocity.y -= velocity.y * (delta * 2) 
+func brake(force, delta):
+	velocity.y -= velocity.y * (delta * force) 
 	if velocity.y < 0.03:
 		velocity.y = 0
 
