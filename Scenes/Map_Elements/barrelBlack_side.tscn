@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Textures/Maps/barrelBlack_side.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10.7714 )
+
+[node name="barrelBlack_side" type="Sprite"]
+
+position = Vector2( 1792, 128 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Area2D" type="Area2D" parent="."]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+
+position = Vector2( 10, 14 )
+scale = Vector2( 1, 1.34615 )
+shape = SubResource( 1 )
+
+
