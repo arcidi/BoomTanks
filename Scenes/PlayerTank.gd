@@ -26,11 +26,11 @@ func _physics_process(delta):
 		if is_left_pressed:
 			rotation -= clamp(velocity.y, rotation_speed, max_velocity) * delta
 			if velocity.y > max_velocity * 0.7:
-				brake(0.8, delta)
+				brake(0.6, delta)
 		if is_right_pressed:
 			rotation += clamp(velocity.y, rotation_speed, max_velocity) * delta
 			if velocity.y > max_velocity * 0.7:
-				brake(0.8, delta)
+				brake(0.6, delta)
 	else:
 		if is_acc_pressed:
 			velocity.y += acceleration * delta
