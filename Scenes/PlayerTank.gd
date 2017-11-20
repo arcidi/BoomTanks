@@ -6,7 +6,7 @@ extends KinematicBody2D
 #Server sends rpc_unreliable position
 
 
-var velocity = Vector2(0,0)
+sync var velocity = Vector2(0,0)
 var rotation_speed = 2
 var max_velocity = 3
 var acceleration = 2
@@ -40,12 +40,18 @@ func _physics_process(delta):
 			velocity.y -= acceleration * delta
 	else: brake(2, delta)
 	
+	if get_tree().is_network_server(): #Im the server, my send this car transform to all!
+		rpc_unreliable("set_position_and_rotation", position, rotation)
+		rset_unreliable("velocity", velocity)
+	
+	
 	velocity = Vector2(0, clamp(velocity.y, -max_velocity, max_velocity))
 	move_and_collide(velocity.rotated(rotation))
 	
-	if get_tree().is_network_server(): #If someone lost connection, then he will have this from server.
-		rset_unreliable("transform", transform)
-		rset_unreliable("velocity", velocity)
+
+remote func set_position_and_rotation(pos, rot):
+	position = pos
+	rotation = rot
 
 func brake(force, delta):
 	velocity.y -= velocity.y * force * ease(inverse_lerp(max_velocity + 0.01, 0, velocity.y), 0.3) * delta 

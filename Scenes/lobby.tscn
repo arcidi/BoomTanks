@@ -30,6 +30,7 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 2
 size_flags_vertical = 2
+_sections_unfolded = [ "Theme" ]
 
 [node name="address_label" type="Label" parent="panel"]
 
