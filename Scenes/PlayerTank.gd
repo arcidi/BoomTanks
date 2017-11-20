@@ -26,17 +26,19 @@ func _physics_process(delta):
 		if is_left_pressed:
 			rotation -= clamp(velocity.y, rotation_speed, max_velocity) * delta
 			if velocity.y > max_velocity * 0.7:
-				brake(0.6, delta)
+				brake(5, delta)
 		if is_right_pressed:
 			rotation += clamp(velocity.y, rotation_speed, max_velocity) * delta
 			if velocity.y > max_velocity * 0.7:
-				brake(0.6, delta)
-	if is_acc_pressed || is_brake_pressed:
+				brake(5, delta)
+		if !is_acc_pressed && !is_brake_pressed:
+			brake(2, delta)
+	elif is_acc_pressed || is_brake_pressed:
 		if is_acc_pressed:
 			velocity.y += acceleration * delta
 		if is_brake_pressed:
 			velocity.y -= acceleration * delta
-	else: brake(1, delta)
+	else: brake(2, delta)
 	
 	velocity = Vector2(0, clamp(velocity.y, -max_velocity, max_velocity))
 	move_and_collide(velocity.rotated(rotation))
@@ -46,7 +48,7 @@ func _physics_process(delta):
 		rset_unreliable("velocity", velocity)
 
 func brake(force, delta):
-	velocity.y -= velocity.y * (delta * force) 
+	velocity.y -= velocity.y * force * ease(inverse_lerp(max_velocity + 0.01, 0, velocity.y), 0.3) * delta 
 	if (velocity.y < 0.03 && velocity.y > 0) || (velocity.y > -0.03 && velocity.y < 0) :
 		velocity.y = 0
 
