@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Factory.gd" type="Script" id=1]
+[ext_resource path="res://Textures/Tanks/Body/tankBody_blue_outline.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Tanks/Body/tankBody_dark_outline.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Tanks/Body/tankBody_green_outline.png" type="Texture" id=4]
+[ext_resource path="res://Textures/Tanks/Body/tankBody_red_outline.png" type="Texture" id=5]
+[ext_resource path="res://Textures/Tanks/Body/tankBody_sand_outline.png" type="Texture" id=6]
+
+[node name="BodyFactory" type="Node"]
+
+script = ExtResource( 1 )
+
+[node name="blue" type="Sprite" parent="."]
+
+position = Vector2( 320, 0 )
+texture = ExtResource( 2 )
+
+[node name="TurretMount1" type="Position2D" parent="blue"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="dark" type="Sprite" parent="."]
+
+position = Vector2( 260, 0 )
+texture = ExtResource( 3 )
+
+[node name="TurretMount1" type="Position2D" parent="dark"]
+
+position = Vector2( 0, 2 )
+
+[node name="green" type="Sprite" parent="."]
+
+position = Vector2( 200, 0 )
+texture = ExtResource( 4 )
+
+[node name="TurretMount1" type="Position2D" parent="green"]
+
+position = Vector2( 0, -4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="red" type="Sprite" parent="."]
+
+position = Vector2( 140, 0 )
+texture = ExtResource( 5 )
+
+[node name="TurretMount1" type="Position2D" parent="red"]
+
+position = Vector2( 0, 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="sand" type="Sprite" parent="."]
+
+position = Vector2( 80, 0 )
+texture = ExtResource( 6 )
+
+[node name="TurretMount1" type="Position2D" parent="sand"]
+
+position = Vector2( 0, 3 )
+_sections_unfolded = [ "Transform" ]
+
+

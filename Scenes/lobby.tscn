@@ -24,7 +24,7 @@ anchor_bottom = 0.0
 margin_left = 2.0
 margin_top = -1.0
 margin_right = 222.0
-margin_bottom = 167.0
+margin_bottom = 251.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -124,10 +124,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 10.0
-margin_top = 115.0
-margin_right = 90.0
-margin_bottom = 80.0
+margin_left = 2.0
+margin_top = 192.0
+margin_right = 82.0
+margin_bottom = 212.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -147,10 +147,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 130.0
-margin_top = 115.0
-margin_right = 210.0
-margin_bottom = 80.0
+margin_left = 127.0
+margin_top = 192.0
+margin_right = 207.0
+margin_bottom = 212.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -206,16 +206,40 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="MenuButton2" type="MenuButton" parent="panel"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 122.0
+margin_right = 162.0
+margin_bottom = 142.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "Turret"
+flat = true
+items = [  ]
+
 [node name="start" type="Button" parent="panel"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 39.0
-margin_top = 143.0
-margin_right = 168.0
-margin_bottom = 163.0
+margin_left = 37.0
+margin_top = 220.0
+margin_right = 166.0
+margin_bottom = 240.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -277,6 +301,8 @@ max_lines_visible = -1
 [connection signal="pressed" from="panel/host" to="." method="_on_host_pressed"]
 
 [connection signal="pressed" from="panel/join" to="." method="_on_join_pressed"]
+
+[connection signal="about_to_show" from="panel/MenuButton2" to="." method="_on_MenuButton2_about_to_show"]
 
 [connection signal="pressed" from="panel/start" to="." method="_on_start_pressed"]
 

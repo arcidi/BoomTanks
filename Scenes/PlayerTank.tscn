@@ -1,12 +1,21 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/PlayerTank.gd" type="Script" id=1]
 [ext_resource path="res://Textures/Tanks/Body/tankBody_blue_outline.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Kenney Pixel.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 128
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
 [node name="PlayerCar" type="KinematicBody2D" groups=[
 "Player",
@@ -26,8 +35,8 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-position = Vector2( 0.509071, -4.29409 )
-scale = Vector2( 1.53307, 2.66271 )
+position = Vector2( 0.0575194, -1.79728 )
+scale = Vector2( 2.0809, 1.96228 )
 shape = SubResource( 1 )
 
 [node name="Name" type="Label" parent="."]
@@ -36,21 +45,22 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -3.0
-margin_top = -4.0
-margin_right = 63.0
-margin_bottom = 10.0
+margin_left = -18.0
+margin_top = -5.0
+margin_right = 430.0
+margin_bottom = 91.0
 rect_scale = Vector2( 0.08, 0.08 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
 text = "Server guy"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
