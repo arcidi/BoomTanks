@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Turret.gd" type="Script" id=1]
+[ext_resource path="res://Textures/Tanks/Guns/tankBlue_barrel3_outline.png" type="Texture" id=2]
+
+[node name="Turret" type="KinematicBody2D"]
+
+position = Vector2( 98.0903, 62.2455 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+
+[node name="tankBlue_barrel3_outline" type="Sprite" parent="."]
+
+rotation = -1.5708
+texture = ExtResource( 2 )
+offset = Vector2( 0, 12.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="BulletSpawnPoint" type="Position2D" parent="."]
+
+position = Vector2( 0, 24 )
+_sections_unfolded = [ "Transform" ]
+
+
