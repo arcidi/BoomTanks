@@ -16,12 +16,12 @@ script = ExtResource( 1 )
 
 rotation = -1.5708
 texture = ExtResource( 2 )
-offset = Vector2( 0, 12.5 )
-_sections_unfolded = [ "Transform" ]
+offset = Vector2( 0, 24 )
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="BulletSpawnPoint" type="Position2D" parent="."]
 
-position = Vector2( 0, 24 )
+position = Vector2( 35, 0 )
 _sections_unfolded = [ "Transform" ]
 
 
