@@ -45,27 +45,38 @@
 
 [node name="tileGrass1" type="Sprite" parent="."]
 
-position = Vector2( 896, 512 )
+position = Vector2( 1792, 1024 )
 texture = ExtResource( 1 )
 centered = false
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="tileGrass2" type="Sprite" parent="."]
 
-position = Vector2( 896, 384 )
+position = Vector2( 1792, 768 )
 texture = ExtResource( 2 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="tileGrass_roadCornerLL" type="Sprite" parent="."]
 
-position = Vector2( 896, 256 )
+position = Vector2( 1792, 512 )
 texture = ExtResource( 3 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadCornerLL" groups=[
 "Road",
 ]]
 
-position = Vector2( 32, 32 )
+position = Vector2( 64, 64 )
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -83,14 +94,18 @@ polygon = PoolVector2Array( -32, -20, -15, -19, -2, -13, 10, -4, 17, 9, 20, 25, 
 
 [node name="tileGrass_roadCornerLR" type="Sprite" parent="."]
 
-position = Vector2( 896, 128 )
+position = Vector2( 1792, 256 )
 texture = ExtResource( 4 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadCornerLR" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -106,14 +121,18 @@ polygon = PoolVector2Array( 12, 64, 13, 52, 18, 35, 32, 19, 48, 13, 64, 12, 64, 
 
 [node name="tileGrass_roadCornerUL" type="Sprite" parent="."]
 
-position = Vector2( 896, 0 )
+position = Vector2( 1792, 0 )
 texture = ExtResource( 5 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadCornerUL" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -129,14 +148,18 @@ polygon = PoolVector2Array( 0, 52, 18, 50, 31, 45, 43, 34, 50, 19, 52, 0, 12, 0,
 
 [node name="tileGrass_roadCornerUR" type="Sprite" parent="."]
 
-position = Vector2( 768, 512 )
+position = Vector2( 1536, 1024 )
 texture = ExtResource( 6 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadCornerUR" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -152,14 +175,18 @@ polygon = PoolVector2Array( 12, 0, 14, 17, 20, 33, 33, 45, 53, 51, 64, 52, 64, 1
 
 [node name="tileGrass_roadCrossing" type="Sprite" parent="."]
 
-position = Vector2( 768, 384 )
+position = Vector2( 1536, 768 )
 texture = ExtResource( 7 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadCrossing" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -175,14 +202,18 @@ polygon = PoolVector2Array( 12, 0, 12, 12, 0, 12, 0, 52, 12, 52, 12, 64, 52, 64,
 
 [node name="tileGrass_roadCrossingRound" type="Sprite" parent="."]
 
-position = Vector2( 768, 256 )
+position = Vector2( 1536, 512 )
 texture = ExtResource( 8 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadCrossingRound" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -198,14 +229,18 @@ polygon = PoolVector2Array( 12, 0, 12, 12, 0, 12, 0, 52, 7, 53, 12, 60, 12, 64, 
 
 [node name="tileGrass_roadEast" type="Sprite" parent="."]
 
-position = Vector2( 768, 128 )
+position = Vector2( 1536, 256 )
 texture = ExtResource( 9 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadEast" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -221,14 +256,18 @@ polygon = PoolVector2Array( 0, 12, 64, 12, 64, 52, 0, 52 )
 
 [node name="tileGrass_roadNorth" type="Sprite" parent="."]
 
-position = Vector2( 768, 0 )
+position = Vector2( 1536, 0 )
 texture = ExtResource( 10 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadNorth" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -244,14 +283,18 @@ polygon = PoolVector2Array( 12, 0, 12, 64, 52, 64, 52, 0 )
 
 [node name="tileGrass_roadSplitE" type="Sprite" parent="."]
 
-position = Vector2( 640, 512 )
+position = Vector2( 1280, 1024 )
 texture = ExtResource( 11 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadSplitE" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -267,14 +310,18 @@ polygon = PoolVector2Array( 52, 64, 52, 52, 64, 52, 64, 12, 52, 12, 52, 0, 12, 0
 
 [node name="tileGrass_roadSplitN" type="Sprite" parent="."]
 
-position = Vector2( 512, 512 )
+position = Vector2( 1024, 1024 )
 texture = ExtResource( 12 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadSplitN" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -290,14 +337,18 @@ polygon = PoolVector2Array( 0, 52, 64, 52, 64, 12, 52, 12, 52, 0, 12, 0, 12, 12,
 
 [node name="tileGrass_roadSplitS" type="Sprite" parent="."]
 
-position = Vector2( 384, 512 )
+position = Vector2( 768, 1024 )
 texture = ExtResource( 13 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadSplitS" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -313,14 +364,18 @@ polygon = PoolVector2Array( 0, 12, 64, 12, 64, 52, 52, 52, 52, 64, 12, 64, 12, 5
 
 [node name="tileGrass_roadSplitW" type="Sprite" parent="."]
 
-position = Vector2( 256, 512 )
+position = Vector2( 512, 1024 )
 texture = ExtResource( 14 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadSplitW" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -336,14 +391,18 @@ polygon = PoolVector2Array( 12, 0, 12, 12, 0, 12, 0, 52, 12, 52, 12, 64, 52, 64,
 
 [node name="tileGrass_roadTransitionE" type="Sprite" parent="."]
 
-position = Vector2( 128, 512 )
+position = Vector2( 256, 1024 )
 texture = ExtResource( 15 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionE" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -359,14 +418,18 @@ polygon = PoolVector2Array( 0, 12, 64, 14, 64, 50, 0, 52 )
 
 [node name="tileGrass_roadTransitionE_dirt" type="Sprite" parent="."]
 
-position = Vector2( 0, 512 )
+position = Vector2( 0, 1024 )
 texture = ExtResource( 16 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionE_dirt" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -382,14 +445,18 @@ polygon = PoolVector2Array( 0, 52, 64, 50, 64, 14, 0, 12 )
 
 [node name="tileGrass_roadTransitionN" type="Sprite" parent="."]
 
-position = Vector2( 640, 384 )
+position = Vector2( 1280, 768 )
 texture = ExtResource( 17 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionN" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -405,14 +472,18 @@ polygon = PoolVector2Array( 12, 64, 14, 0, 50, 0, 52, 64 )
 
 [node name="tileGrass_roadTransitionN_dirt" type="Sprite" parent="."]
 
-position = Vector2( 512, 384 )
+position = Vector2( 1024, 768 )
 texture = ExtResource( 18 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionN_dirt" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -428,14 +499,18 @@ polygon = PoolVector2Array( 12, 64, 14, 0, 50, 0, 52, 64 )
 
 [node name="tileGrass_roadTransitionS" type="Sprite" parent="."]
 
-position = Vector2( 384, 384 )
+position = Vector2( 768, 768 )
 texture = ExtResource( 19 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionS" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -451,14 +526,18 @@ polygon = PoolVector2Array( 14, 64, 12, 0, 52, 0, 50, 64 )
 
 [node name="tileGrass_roadTransitionS_dirt" type="Sprite" parent="."]
 
-position = Vector2( 256, 384 )
+position = Vector2( 512, 768 )
 texture = ExtResource( 20 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionS_dirt" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -474,14 +553,18 @@ polygon = PoolVector2Array( 12, 0, 14, 64, 50, 64, 52, 0 )
 
 [node name="tileGrass_roadTransitionW" type="Sprite" parent="."]
 
-position = Vector2( 128, 384 )
+position = Vector2( 256, 768 )
 texture = ExtResource( 21 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionW" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -497,14 +580,18 @@ polygon = PoolVector2Array( 0, 14, 64, 12, 64, 52, 0, 50 )
 
 [node name="tileGrass_roadTransitionW_dirt" type="Sprite" parent="."]
 
-position = Vector2( 0, 384 )
+position = Vector2( 0, 768 )
 texture = ExtResource( 22 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionW_dirt" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -520,51 +607,73 @@ polygon = PoolVector2Array( 0, 14, 64, 12, 64, 52, 0, 50 )
 
 [node name="tileGrass_transitionE" type="Sprite" parent="."]
 
-position = Vector2( 640, 256 )
+position = Vector2( 1280, 512 )
 texture = ExtResource( 23 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="tileGrass_transitionN" type="Sprite" parent="."]
 
-position = Vector2( 640, 128 )
+position = Vector2( 1280, 256 )
 texture = ExtResource( 24 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="tileGrass_transitionS" type="Sprite" parent="."]
 
-position = Vector2( 640, 0 )
+position = Vector2( 1280, 0 )
 texture = ExtResource( 25 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="tileGrass_transitionW" type="Sprite" parent="."]
 
-position = Vector2( 512, 256 )
+position = Vector2( 1024, 512 )
 texture = ExtResource( 26 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="tileSand1" type="Sprite" parent="."]
 
-position = Vector2( 384, 256 )
+position = Vector2( 768, 512 )
 texture = ExtResource( 27 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="tileSand2" type="Sprite" parent="."]
 
-position = Vector2( 256, 256 )
+position = Vector2( 512, 512 )
 texture = ExtResource( 28 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="tileSand_roadCornerLL" type="Sprite" parent="."]
 
-position = Vector2( 128, 256 )
+position = Vector2( 256, 512 )
 texture = ExtResource( 29 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D2" type="Area2D" parent="tileSand_roadCornerLL" groups=[
 "Road",
 ]]
 
-position = Vector2( 800, 32 )
+position = Vector2( 64, 65 )
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -577,21 +686,25 @@ audio_bus_name = "Master"
 "Road",
 ]]
 
-position = Vector2( -767, -2 )
 build_mode = 0
 polygon = PoolVector2Array( -32, -20, -15, -19, -2, -13, 10, -4, 17, 9, 20, 25, 20, 32, -20, 32, -20, 26, -26, 21, -27, 20, -32, 20 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="tileSand_roadCornerLR" type="Sprite" parent="."]
 
-position = Vector2( 0, 256 )
+position = Vector2( 0, 512 )
 texture = ExtResource( 30 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D2" type="Area2D" parent="tileSand_roadCornerLR" groups=[
 "Road",
 ]]
 
 position = Vector2( 0, -2 )
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -608,14 +721,18 @@ polygon = PoolVector2Array( 12, 64, 13, 52, 18, 35, 32, 19, 48, 13, 64, 12, 64, 
 
 [node name="tileSand_roadCornerUL" type="Sprite" parent="."]
 
-position = Vector2( 512, 0 )
+position = Vector2( 1024, 0 )
 texture = ExtResource( 31 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadCornerUL" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -631,14 +748,18 @@ polygon = PoolVector2Array( 0, 54, 29, 49, 47, 31, 54, 9, 55, 0, 11, 0, 8, 7, 0,
 
 [node name="tileSand_roadCornerUR" type="Sprite" parent="."]
 
-position = Vector2( 512, 128 )
+position = Vector2( 1024, 256 )
 texture = ExtResource( 32 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadCornerUR" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -654,14 +775,18 @@ polygon = PoolVector2Array( 9, 0, 12, 23, 23, 41, 42, 52, 56, 55, 64, 55, 64, 9,
 
 [node name="tileSand_roadCrossing" type="Sprite" parent="."]
 
-position = Vector2( 384, 128 )
+position = Vector2( 768, 256 )
 texture = ExtResource( 33 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadCrossing" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -677,14 +802,18 @@ polygon = PoolVector2Array( 14, 0, 13, 14, 0, 14, 0, 50, 13, 51, 14, 64, 50, 64,
 
 [node name="tileSand_roadCrossingRound" type="Sprite" parent="."]
 
-position = Vector2( 256, 128 )
+position = Vector2( 512, 256 )
 texture = ExtResource( 34 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadCrossingRound" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -700,14 +829,18 @@ polygon = PoolVector2Array( 0, 14, 15, 15, 14, 0, 50, 0, 52, 8, 56, 12, 64, 14, 
 
 [node name="tileSand_roadEast" type="Sprite" parent="."]
 
-position = Vector2( 128, 128 )
+position = Vector2( 256, 256 )
 texture = ExtResource( 35 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadEast" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -723,14 +856,18 @@ polygon = PoolVector2Array( 0, 14, 64, 14, 64, 50, 0, 50 )
 
 [node name="tileSand_roadNorth" type="Sprite" parent="."]
 
-position = Vector2( 0, 128 )
+position = Vector2( 0, 256 )
 texture = ExtResource( 36 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadNorth" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -748,11 +885,15 @@ polygon = PoolVector2Array( 14, 0, 14, 64, 50, 64, 50, 0 )
 
 texture = ExtResource( 37 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadSplitE" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -768,14 +909,18 @@ polygon = PoolVector2Array( 14, 64, 14, 0, 50, 0, 51, 13, 64, 14, 64, 50, 51, 51
 
 [node name="tileSand_roadSplitN" type="Sprite" parent="."]
 
-position = Vector2( 384, 0 )
+position = Vector2( 768, 0 )
 texture = ExtResource( 38 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadSplitN" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -791,14 +936,18 @@ polygon = PoolVector2Array( 14, 0, 13, 13, 0, 14, 0, 50, 64, 50, 64, 14, 51, 13,
 
 [node name="tileSand_roadSplitS" type="Sprite" parent="."]
 
-position = Vector2( 128, 0 )
+position = Vector2( 256, 0 )
 texture = ExtResource( 39 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadSplitS" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -814,14 +963,18 @@ polygon = PoolVector2Array( 0, 14, 64, 14, 64, 50, 51, 51, 50, 64, 14, 64, 13, 5
 
 [node name="tileSand_roadSplitW" type="Sprite" parent="."]
 
-position = Vector2( 256, 0 )
+position = Vector2( 512, 0 )
 texture = ExtResource( 40 )
 centered = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="tileSand_roadSplitW" groups=[
 "Road",
 ]]
 
+scale = Vector2( 2, 2 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
