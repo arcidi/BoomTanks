@@ -12,7 +12,7 @@ extents = Vector2( 10, 10 )
 
 [sub_resource type="DynamicFont" id=2]
 
-size = 128
+size = 256
 use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 3 )
@@ -46,10 +46,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -18.0
-margin_top = -5.0
-margin_right = 430.0
-margin_bottom = 91.0
+margin_left = -38.0
+margin_top = -44.0
+margin_right = 858.0
+margin_bottom = 148.0
 rect_scale = Vector2( 0.08, 0.08 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
