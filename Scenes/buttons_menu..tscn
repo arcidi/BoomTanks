@@ -1,8 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Fonts/Kenney Future.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/Boxy-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Textures/UI/blue_button02.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/host.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/menu_buttons.gd" type="Script" id=3]
 [ext_resource path="res://Textures/UI/green_button02.png" type="Texture" id=4]
 [ext_resource path="res://Textures/UI/red_button01.png" type="Texture" id=5]
 [ext_resource path="res://Textures/UI/yellow_button02.png" type="Texture" id=6]
@@ -23,16 +23,40 @@ use_filter = false
 font_data = ExtResource( 1 )
 _sections_unfolded = [ "Font" ]
 
+[sub_resource type="DynamicFont" id=3]
+
+size = 16
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 1 )
+_sections_unfolded = [ "Font" ]
+
+[sub_resource type="DynamicFont" id=4]
+
+size = 16
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 1 )
+_sections_unfolded = [ "Font" ]
+
+[sub_resource type="DynamicFont" id=5]
+
+size = 16
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 1 )
+_sections_unfolded = [ "Font", "Settings" ]
+
 [node name="Control" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 4.0
-margin_top = 10.0
-margin_right = 643.0
-margin_bottom = 366.0
+margin_left = -6.0
+margin_top = 38.0
+margin_right = 633.0
+margin_bottom = 394.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -47,10 +71,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 154.0
-margin_top = 3.0
-margin_right = 351.0
-margin_bottom = 49.0
+margin_left = 152.0
+margin_top = 2.0
+margin_right = 372.0
+margin_bottom = 48.0
 rect_scale = Vector2( 2, 2 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -58,6 +82,8 @@ mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Jeszcze nie wiemy"
 align = 1
 valign = 1
@@ -95,8 +121,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_top = 2.0
 margin_right = 189.0
-margin_bottom = 46.0
+margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -104,6 +131,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "HOST"
 align = 1
 valign = 1
@@ -134,7 +162,33 @@ group = null
 texture_normal = ExtResource( 4 )
 _sections_unfolded = [ "Textures", "Theme" ]
 
-[node name="OPTIONS" type="TextureButton" parent="."]
+[node name="Label" type="Label" parent="join"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_top = -1.0
+margin_right = 191.0
+margin_bottom = 46.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Join"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="options" type="TextureButton" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -156,7 +210,32 @@ group = null
 texture_normal = ExtResource( 5 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="Label" type="Label" parent="options"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_right = 189.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Options"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="exit" type="TextureButton" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -177,6 +256,30 @@ shortcut = null
 group = null
 texture_normal = ExtResource( 6 )
 _sections_unfolded = [ "Textures" ]
+
+[node name="Label" type="Label" parent="exit"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 188.0
+margin_bottom = 45.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Exit"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 [connection signal="button_down" from="host" to="host" method="_on_host_button_down"]
 
