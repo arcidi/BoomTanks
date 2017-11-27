@@ -36,8 +36,8 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-position = Vector2( 0.0575194, -1.79728 )
-scale = Vector2( 2.0809, 1.96228 )
+position = Vector2( 0.1447, 1.41828 )
+scale = Vector2( 4.17224, 4.03068 )
 shape = SubResource( 1 )
 
 [node name="Name" type="Label" parent="."]

@@ -2,7 +2,7 @@ extends Node2D
 
 onready var bullet_scene = preload("res://Scenes/bulletBlue3_outline.tscn")
 
-var shoot_per_seconds = 2
+var shoot_per_seconds = 1
 sync var cool_down_timer = float(1) / shoot_per_seconds
 
 func _ready():
@@ -23,9 +23,11 @@ sync func spawn_bullet():
 	if cool_down_timer <= 0: 
 		var bullet = bullet_scene.instance()
 		if get_tree().is_network_server():
-			bullet.position = get_node("BulletSpawnPoint").global_position
 			bullet.rotation_deg = global_rotation_deg + 90
 			bullet.velocity = Vector2(1,0).rotated(global_rotation)
 			bullet.speed = 500
+		bullet.position = get_node("BulletSpawnPoint").global_position
+		bullet.dmg = 25 # REPLACE IT!!!
+		bullet.owner = get_parent().get_name()
 		cool_down_timer = float(1) / shoot_per_seconds
 		get_tree().get_root().add_child(bullet)

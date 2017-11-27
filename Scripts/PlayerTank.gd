@@ -10,6 +10,7 @@ sync var velocity = Vector2(0,0)
 var rotation_speed = 2
 var max_velocity = 3
 var acceleration = 2
+var hp = 100
 
 sync var is_left_pressed = false
 sync var is_right_pressed = false
@@ -17,8 +18,20 @@ sync var is_acc_pressed = false
 sync var is_brake_pressed = false
 
 func _ready():
+	set_process(true)
 	set_physics_process(true)
 	set_process_input(true)
+
+func _process(delta):
+	if get_tree().is_network_server(): #Im the server, my send this car transform to all!
+		rpc_unreliable("set_position_and_rotation", position, rotation)
+		rset_unreliable("velocity", velocity)
+		if hp <= 0:
+			rpc("destroy")
+
+slave func destroy():
+	#print("Im destroyed!" + get_name())
+	pass
 
 func _physics_process(delta):
 	#procces input
@@ -40,9 +53,6 @@ func _physics_process(delta):
 			velocity.y -= acceleration * delta
 	else: brake(2, delta)
 	
-	if get_tree().is_network_server(): #Im the server, my send this car transform to all!
-		rpc_unreliable("set_position_and_rotation", position, rotation)
-		rset_unreliable("velocity", velocity)
 	
 	
 	velocity = Vector2(0, clamp(velocity.y, -max_velocity, max_velocity))

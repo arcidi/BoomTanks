@@ -6,6 +6,8 @@ var slots = 4
 const port = 8910 #Random port, probalby needs change
 var my_info = { name = "ServerGuy", id = 1}
 
+var spawned = false
+
 func _player_disconnected(id):
 	global.players_info.erase(id) #remove player id from list
 	rpc("update_players_list") #Update playerlist for others
@@ -77,11 +79,17 @@ func _on_join_pressed():
 
 func _on_start_pressed():
 	hide() #hide UI
-	if get_tree().is_network_server(): #If i'am server start game
+	#if get_tree().is_network_server(): #If i'am server start game
+	if !spawned:
 		rpc("spawn_players")
-		spawn_players()
+		print("AYE")
+	#spawn_players()
 
-remote func spawn_players():
+sync func spawn_player():
+	var car = preload("res://Scenes/PlayerTank.tscn").instance()
+
+sync func spawn_players():
+	spawned = true
 	var x = 0
 	for cars in global.players_info: #Spawn car for each player
 		x += 1
