@@ -91,15 +91,9 @@ sync func spawn_player():
 sync func spawn_players():
 	spawned = true
 	var x = 0
-	for cars in global.players_info: #Spawn car for each player
+	for player in global.players_info: #Spawn car for each player
 		x += 1
-		var car = preload("res://Scenes/PlayerTank.tscn").instance()
-		car.set_name(str(cars))
-		car.set_network_master(cars)
-		car.position += Vector2(50, 0) * x #We don't want spawn all cars in this same position!
-		get_parent().get_parent().get_node("Players").add_child(car)
-		if cars == get_tree().get_network_unique_id(): 
-			car.get_node("Camera2D").current = true #If thats my car set his camera to current
+		player_manager.spawn_player_car(player)
 
 remote func register_player(id, info):
 	# Store the info

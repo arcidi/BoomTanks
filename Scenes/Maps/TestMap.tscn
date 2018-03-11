@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Maps/Map_Elements/TileSet.tres" type="TileSet" id=1]
-[ext_resource path="res://Scenes/Maps/Map_Elements/SpawnPoint.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/SpawnPoint.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Maps/Map_Elements/SpawnPoint.tscn" type="PackedScene" id=3]
+
+
 
 
 [node name="TestMap" type="TileMap"]
@@ -29,8 +32,26 @@ _sections_unfolded = [ "Cell" ]
 
 _sections_unfolded = [ "Visibility" ]
 
-[node name="SpawnPoint" parent="Objects" index="0" instance=ExtResource( 2 )]
+[node name="spawn_points" type="Node2D" parent="." index="1"]
 
-position = Vector2( 34.6216, 28.3884 )
+z_index = 1
+script = ExtResource( 2 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="SpawnPoint" parent="spawn_points" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 130.135, 526.965 )
+
+[node name="SpawnPoint2" parent="spawn_points" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 728.384, 530.165 )
+
+[node name="SpawnPoint3" parent="spawn_points" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 104.88, 53.1836 )
+
+[node name="SpawnPoint4" parent="spawn_points" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 1010.81, 78.2581 )
 
 
