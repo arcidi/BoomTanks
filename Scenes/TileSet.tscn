@@ -43,7 +43,7 @@
 
 [node name="TileSet" type="Node"]
 
-[node name="tileGrass1" type="Sprite" parent="."]
+[node name="tileGrass1" type="Sprite" parent="." index="0"]
 
 position = Vector2( 1792, 1024 )
 texture = ExtResource( 1 )
@@ -53,7 +53,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileGrass2" type="Sprite" parent="."]
+[node name="tileGrass2" type="Sprite" parent="." index="1"]
 
 position = Vector2( 1792, 768 )
 texture = ExtResource( 2 )
@@ -62,7 +62,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileGrass_roadCornerLL" type="Sprite" parent="."]
+[node name="tileGrass_roadCornerLL" type="Sprite" parent="." index="2"]
 
 position = Vector2( 1792, 512 )
 texture = ExtResource( 3 )
@@ -71,7 +71,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadCornerLL" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadCornerLL" index="0" groups=[
 "Road",
 ]]
 
@@ -85,14 +85,14 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCornerLL/Area2D" groups=[
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCornerLL/Area2D" index="0" groups=[
 "Road",
 ]]
 
 build_mode = 0
 polygon = PoolVector2Array( -32, -20, -15, -19, -2, -13, 10, -4, 17, 9, 20, 25, 20, 32, -20, 32, -20, 26, -26, 21, -27, 20, -32, 20 )
 
-[node name="tileGrass_roadCornerLR" type="Sprite" parent="."]
+[node name="tileGrass_roadCornerLR" type="Sprite" parent="." index="3"]
 
 position = Vector2( 1792, 256 )
 texture = ExtResource( 4 )
@@ -101,7 +101,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadCornerLR" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadCornerLR" index="0" groups=[
 "Road",
 ]]
 
@@ -114,12 +114,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCornerLR/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCornerLR/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 12, 64, 13, 52, 18, 35, 32, 19, 48, 13, 64, 12, 64, 52, 59, 52, 54, 56, 52, 60, 52, 64 )
 
-[node name="tileGrass_roadCornerUL" type="Sprite" parent="."]
+[node name="tileGrass_roadCornerUL" type="Sprite" parent="." index="4"]
 
 position = Vector2( 1792, 0 )
 texture = ExtResource( 5 )
@@ -128,7 +128,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadCornerUL" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadCornerUL" index="0" groups=[
 "Road",
 ]]
 
@@ -141,12 +141,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCornerUL/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCornerUL/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 52, 18, 50, 31, 45, 43, 34, 50, 19, 52, 0, 12, 0, 11, 7, 5, 12, 0, 12 )
 
-[node name="tileGrass_roadCornerUR" type="Sprite" parent="."]
+[node name="tileGrass_roadCornerUR" type="Sprite" parent="." index="5"]
 
 position = Vector2( 1536, 1024 )
 texture = ExtResource( 6 )
@@ -155,7 +155,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadCornerUR" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadCornerUR" index="0" groups=[
 "Road",
 ]]
 
@@ -168,12 +168,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCornerUR/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCornerUR/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 14, 17, 20, 33, 33, 45, 53, 51, 64, 52, 64, 12, 57, 11, 53, 5, 52, 0 )
 
-[node name="tileGrass_roadCrossing" type="Sprite" parent="."]
+[node name="tileGrass_roadCrossing" type="Sprite" parent="." index="6"]
 
 position = Vector2( 1536, 768 )
 texture = ExtResource( 7 )
@@ -182,7 +182,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadCrossing" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadCrossing" index="0" groups=[
 "Road",
 ]]
 
@@ -195,12 +195,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCrossing/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCrossing/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 12, 12, 0, 12, 0, 52, 12, 52, 12, 64, 52, 64, 52, 52, 64, 52, 64, 12, 52, 12, 52, 0 )
 
-[node name="tileGrass_roadCrossingRound" type="Sprite" parent="."]
+[node name="tileGrass_roadCrossingRound" type="Sprite" parent="." index="7"]
 
 position = Vector2( 1536, 512 )
 texture = ExtResource( 8 )
@@ -209,7 +209,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadCrossingRound" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadCrossingRound" index="0" groups=[
 "Road",
 ]]
 
@@ -222,12 +222,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCrossingRound/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadCrossingRound/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 12, 12, 0, 12, 0, 52, 7, 53, 12, 60, 12, 64, 52, 64, 51, 51, 64, 52, 64, 12, 57, 10, 53, 6, 52, 0 )
 
-[node name="tileGrass_roadEast" type="Sprite" parent="."]
+[node name="tileGrass_roadEast" type="Sprite" parent="." index="8"]
 
 position = Vector2( 1536, 256 )
 texture = ExtResource( 9 )
@@ -236,7 +236,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadEast" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadEast" index="0" groups=[
 "Road",
 ]]
 
@@ -249,12 +249,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadEast/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadEast/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 12, 64, 12, 64, 52, 0, 52 )
 
-[node name="tileGrass_roadNorth" type="Sprite" parent="."]
+[node name="tileGrass_roadNorth" type="Sprite" parent="." index="9"]
 
 position = Vector2( 1536, 0 )
 texture = ExtResource( 10 )
@@ -263,7 +263,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadNorth" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadNorth" index="0" groups=[
 "Road",
 ]]
 
@@ -276,12 +276,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadNorth/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadNorth/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 12, 64, 52, 64, 52, 0 )
 
-[node name="tileGrass_roadSplitE" type="Sprite" parent="."]
+[node name="tileGrass_roadSplitE" type="Sprite" parent="." index="10"]
 
 position = Vector2( 1280, 1024 )
 texture = ExtResource( 11 )
@@ -290,7 +290,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadSplitE" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadSplitE" index="0" groups=[
 "Road",
 ]]
 
@@ -303,12 +303,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadSplitE/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadSplitE/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 52, 64, 52, 52, 64, 52, 64, 12, 52, 12, 52, 0, 12, 0, 12, 64 )
 
-[node name="tileGrass_roadSplitN" type="Sprite" parent="."]
+[node name="tileGrass_roadSplitN" type="Sprite" parent="." index="11"]
 
 position = Vector2( 1024, 1024 )
 texture = ExtResource( 12 )
@@ -317,7 +317,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadSplitN" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadSplitN" index="0" groups=[
 "Road",
 ]]
 
@@ -330,12 +330,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadSplitN/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadSplitN/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 52, 64, 52, 64, 12, 52, 12, 52, 0, 12, 0, 12, 12, 0, 12 )
 
-[node name="tileGrass_roadSplitS" type="Sprite" parent="."]
+[node name="tileGrass_roadSplitS" type="Sprite" parent="." index="12"]
 
 position = Vector2( 768, 1024 )
 texture = ExtResource( 13 )
@@ -344,7 +344,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadSplitS" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadSplitS" index="0" groups=[
 "Road",
 ]]
 
@@ -357,12 +357,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadSplitS/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadSplitS/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 12, 64, 12, 64, 52, 52, 52, 52, 64, 12, 64, 12, 52, 0, 52 )
 
-[node name="tileGrass_roadSplitW" type="Sprite" parent="."]
+[node name="tileGrass_roadSplitW" type="Sprite" parent="." index="13"]
 
 position = Vector2( 512, 1024 )
 texture = ExtResource( 14 )
@@ -371,7 +371,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadSplitW" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadSplitW" index="0" groups=[
 "Road",
 ]]
 
@@ -384,12 +384,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadSplitW/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadSplitW/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 12, 12, 0, 12, 0, 52, 12, 52, 12, 64, 52, 64, 52, 0 )
 
-[node name="tileGrass_roadTransitionE" type="Sprite" parent="."]
+[node name="tileGrass_roadTransitionE" type="Sprite" parent="." index="14"]
 
 position = Vector2( 256, 1024 )
 texture = ExtResource( 15 )
@@ -398,7 +398,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionE" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionE" index="0" groups=[
 "Road",
 ]]
 
@@ -411,12 +411,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionE/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionE/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 12, 64, 14, 64, 50, 0, 52 )
 
-[node name="tileGrass_roadTransitionE_dirt" type="Sprite" parent="."]
+[node name="tileGrass_roadTransitionE_dirt" type="Sprite" parent="." index="15"]
 
 position = Vector2( 0, 1024 )
 texture = ExtResource( 16 )
@@ -425,7 +425,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionE_dirt" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionE_dirt" index="0" groups=[
 "Road",
 ]]
 
@@ -438,12 +438,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionE_dirt/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionE_dirt/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 52, 64, 50, 64, 14, 0, 12 )
 
-[node name="tileGrass_roadTransitionN" type="Sprite" parent="."]
+[node name="tileGrass_roadTransitionN" type="Sprite" parent="." index="16"]
 
 position = Vector2( 1280, 768 )
 texture = ExtResource( 17 )
@@ -452,7 +452,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionN" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionN" index="0" groups=[
 "Road",
 ]]
 
@@ -465,12 +465,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionN/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionN/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 12, 64, 14, 0, 50, 0, 52, 64 )
 
-[node name="tileGrass_roadTransitionN_dirt" type="Sprite" parent="."]
+[node name="tileGrass_roadTransitionN_dirt" type="Sprite" parent="." index="17"]
 
 position = Vector2( 1024, 768 )
 texture = ExtResource( 18 )
@@ -479,7 +479,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionN_dirt" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionN_dirt" index="0" groups=[
 "Road",
 ]]
 
@@ -492,12 +492,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionN_dirt/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionN_dirt/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 12, 64, 14, 0, 50, 0, 52, 64 )
 
-[node name="tileGrass_roadTransitionS" type="Sprite" parent="."]
+[node name="tileGrass_roadTransitionS" type="Sprite" parent="." index="18"]
 
 position = Vector2( 768, 768 )
 texture = ExtResource( 19 )
@@ -506,7 +506,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionS" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionS" index="0" groups=[
 "Road",
 ]]
 
@@ -519,12 +519,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionS/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionS/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 14, 64, 12, 0, 52, 0, 50, 64 )
 
-[node name="tileGrass_roadTransitionS_dirt" type="Sprite" parent="."]
+[node name="tileGrass_roadTransitionS_dirt" type="Sprite" parent="." index="19"]
 
 position = Vector2( 512, 768 )
 texture = ExtResource( 20 )
@@ -533,7 +533,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionS_dirt" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionS_dirt" index="0" groups=[
 "Road",
 ]]
 
@@ -546,12 +546,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionS_dirt/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionS_dirt/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 14, 64, 50, 64, 52, 0 )
 
-[node name="tileGrass_roadTransitionW" type="Sprite" parent="."]
+[node name="tileGrass_roadTransitionW" type="Sprite" parent="." index="20"]
 
 position = Vector2( 256, 768 )
 texture = ExtResource( 21 )
@@ -560,7 +560,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionW" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionW" index="0" groups=[
 "Road",
 ]]
 
@@ -573,12 +573,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionW/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionW/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 64, 12, 64, 52, 0, 50 )
 
-[node name="tileGrass_roadTransitionW_dirt" type="Sprite" parent="."]
+[node name="tileGrass_roadTransitionW_dirt" type="Sprite" parent="." index="21"]
 
 position = Vector2( 0, 768 )
 texture = ExtResource( 22 )
@@ -587,7 +587,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionW_dirt" groups=[
+[node name="Area2D" type="Area2D" parent="tileGrass_roadTransitionW_dirt" index="0" groups=[
 "Road",
 ]]
 
@@ -600,12 +600,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionW_dirt/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileGrass_roadTransitionW_dirt/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 64, 12, 64, 52, 0, 50 )
 
-[node name="tileGrass_transitionE" type="Sprite" parent="."]
+[node name="tileGrass_transitionE" type="Sprite" parent="." index="22"]
 
 position = Vector2( 1280, 512 )
 texture = ExtResource( 23 )
@@ -614,7 +614,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileGrass_transitionN" type="Sprite" parent="."]
+[node name="tileGrass_transitionN" type="Sprite" parent="." index="23"]
 
 position = Vector2( 1280, 256 )
 texture = ExtResource( 24 )
@@ -623,7 +623,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileGrass_transitionS" type="Sprite" parent="."]
+[node name="tileGrass_transitionS" type="Sprite" parent="." index="24"]
 
 position = Vector2( 1280, 0 )
 texture = ExtResource( 25 )
@@ -632,7 +632,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileGrass_transitionW" type="Sprite" parent="."]
+[node name="tileGrass_transitionW" type="Sprite" parent="." index="25"]
 
 position = Vector2( 1024, 512 )
 texture = ExtResource( 26 )
@@ -641,7 +641,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileSand1" type="Sprite" parent="."]
+[node name="tileSand1" type="Sprite" parent="." index="26"]
 
 position = Vector2( 768, 512 )
 texture = ExtResource( 27 )
@@ -650,7 +650,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileSand2" type="Sprite" parent="."]
+[node name="tileSand2" type="Sprite" parent="." index="27"]
 
 position = Vector2( 512, 512 )
 texture = ExtResource( 28 )
@@ -659,7 +659,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileSand_roadCornerLL" type="Sprite" parent="."]
+[node name="tileSand_roadCornerLL" type="Sprite" parent="." index="28"]
 
 position = Vector2( 256, 512 )
 texture = ExtResource( 29 )
@@ -668,7 +668,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D2" type="Area2D" parent="tileSand_roadCornerLL" groups=[
+[node name="Area2D2" type="Area2D" parent="tileSand_roadCornerLL" index="0" groups=[
 "Road",
 ]]
 
@@ -682,7 +682,7 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCornerLL/Area2D2" groups=[
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCornerLL/Area2D2" index="0" groups=[
 "Road",
 ]]
 
@@ -690,7 +690,7 @@ build_mode = 0
 polygon = PoolVector2Array( -32, -20, -15, -19, -2, -13, 10, -4, 17, 9, 20, 25, 20, 32, -20, 32, -20, 26, -26, 21, -27, 20, -32, 20 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="tileSand_roadCornerLR" type="Sprite" parent="."]
+[node name="tileSand_roadCornerLR" type="Sprite" parent="." index="29"]
 
 position = Vector2( 0, 512 )
 texture = ExtResource( 30 )
@@ -699,7 +699,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D2" type="Area2D" parent="tileSand_roadCornerLR" groups=[
+[node name="Area2D2" type="Area2D" parent="tileSand_roadCornerLR" index="0" groups=[
 "Road",
 ]]
 
@@ -713,13 +713,13 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCornerLR/Area2D2"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCornerLR/Area2D2" index="0"]
 
 position = Vector2( -1, 1 )
 build_mode = 0
 polygon = PoolVector2Array( 12, 64, 13, 52, 18, 35, 32, 19, 48, 13, 64, 12, 64, 52, 59, 52, 54, 56, 52, 60, 52, 64 )
 
-[node name="tileSand_roadCornerUL" type="Sprite" parent="."]
+[node name="tileSand_roadCornerUL" type="Sprite" parent="." index="30"]
 
 position = Vector2( 1024, 0 )
 texture = ExtResource( 31 )
@@ -728,7 +728,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadCornerUL" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadCornerUL" index="0" groups=[
 "Road",
 ]]
 
@@ -741,12 +741,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCornerUL/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCornerUL/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 54, 29, 49, 47, 31, 54, 9, 55, 0, 11, 0, 8, 7, 0, 9 )
 
-[node name="tileSand_roadCornerUR" type="Sprite" parent="."]
+[node name="tileSand_roadCornerUR" type="Sprite" parent="." index="31"]
 
 position = Vector2( 1024, 256 )
 texture = ExtResource( 32 )
@@ -755,7 +755,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadCornerUR" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadCornerUR" index="0" groups=[
 "Road",
 ]]
 
@@ -768,12 +768,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCornerUR/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCornerUR/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 9, 0, 12, 23, 23, 41, 42, 52, 56, 55, 64, 55, 64, 9, 56, 7, 55, 0 )
 
-[node name="tileSand_roadCrossing" type="Sprite" parent="."]
+[node name="tileSand_roadCrossing" type="Sprite" parent="." index="32"]
 
 position = Vector2( 768, 256 )
 texture = ExtResource( 33 )
@@ -782,7 +782,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadCrossing" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadCrossing" index="0" groups=[
 "Road",
 ]]
 
@@ -795,12 +795,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCrossing/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCrossing/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 14, 0, 13, 14, 0, 14, 0, 50, 13, 51, 14, 64, 50, 64, 51, 51, 64, 50, 64, 14, 51, 13, 50, 0 )
 
-[node name="tileSand_roadCrossingRound" type="Sprite" parent="."]
+[node name="tileSand_roadCrossingRound" type="Sprite" parent="." index="33"]
 
 position = Vector2( 512, 256 )
 texture = ExtResource( 34 )
@@ -809,7 +809,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadCrossingRound" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadCrossingRound" index="0" groups=[
 "Road",
 ]]
 
@@ -822,12 +822,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCrossingRound/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadCrossingRound/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 15, 15, 14, 0, 50, 0, 52, 8, 56, 12, 64, 14, 64, 50, 49, 49, 50, 64, 14, 64, 13, 57, 7, 52, 0, 50 )
 
-[node name="tileSand_roadEast" type="Sprite" parent="."]
+[node name="tileSand_roadEast" type="Sprite" parent="." index="34"]
 
 position = Vector2( 256, 256 )
 texture = ExtResource( 35 )
@@ -836,7 +836,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadEast" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadEast" index="0" groups=[
 "Road",
 ]]
 
@@ -849,12 +849,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadEast/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadEast/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 64, 14, 64, 50, 0, 50 )
 
-[node name="tileSand_roadNorth" type="Sprite" parent="."]
+[node name="tileSand_roadNorth" type="Sprite" parent="." index="35"]
 
 position = Vector2( 0, 256 )
 texture = ExtResource( 36 )
@@ -863,7 +863,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadNorth" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadNorth" index="0" groups=[
 "Road",
 ]]
 
@@ -876,12 +876,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadNorth/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadNorth/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 14, 0, 14, 64, 50, 64, 50, 0 )
 
-[node name="tileSand_roadSplitE" type="Sprite" parent="."]
+[node name="tileSand_roadSplitE" type="Sprite" parent="." index="36"]
 
 texture = ExtResource( 37 )
 centered = false
@@ -889,7 +889,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadSplitE" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadSplitE" index="0" groups=[
 "Road",
 ]]
 
@@ -902,12 +902,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadSplitE/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadSplitE/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 14, 64, 14, 0, 50, 0, 51, 13, 64, 14, 64, 50, 51, 51, 51, 64 )
 
-[node name="tileSand_roadSplitN" type="Sprite" parent="."]
+[node name="tileSand_roadSplitN" type="Sprite" parent="." index="37"]
 
 position = Vector2( 768, 0 )
 texture = ExtResource( 38 )
@@ -916,7 +916,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadSplitN" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadSplitN" index="0" groups=[
 "Road",
 ]]
 
@@ -929,12 +929,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadSplitN/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadSplitN/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 14, 0, 13, 13, 0, 14, 0, 50, 64, 50, 64, 14, 51, 13, 50, 0 )
 
-[node name="tileSand_roadSplitS" type="Sprite" parent="."]
+[node name="tileSand_roadSplitS" type="Sprite" parent="." index="38"]
 
 position = Vector2( 256, 0 )
 texture = ExtResource( 39 )
@@ -943,7 +943,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadSplitS" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadSplitS" index="0" groups=[
 "Road",
 ]]
 
@@ -956,12 +956,12 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadSplitS/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadSplitS/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 64, 14, 64, 50, 51, 51, 50, 64, 14, 64, 13, 51, 0, 50 )
 
-[node name="tileSand_roadSplitW" type="Sprite" parent="."]
+[node name="tileSand_roadSplitW" type="Sprite" parent="." index="39"]
 
 position = Vector2( 512, 0 )
 texture = ExtResource( 40 )
@@ -970,7 +970,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Area2D" type="Area2D" parent="tileSand_roadSplitW" groups=[
+[node name="Area2D" type="Area2D" parent="tileSand_roadSplitW" index="0" groups=[
 "Road",
 ]]
 
@@ -983,7 +983,7 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadSplitW/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tileSand_roadSplitW/Area2D" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 13, 13, 14, 0, 50, 0, 50, 64, 14, 64, 13, 51, 0, 50 )
