@@ -20,3 +20,4 @@ remote func update_position(trans):
 func _on_bulletBlue3_outline_body_entered( body ):
 	if str(body.get_network_master()) != master_of_bullet && body.is_in_group("Player"):
 		queue_free()
+		body.hp -= dmg

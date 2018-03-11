@@ -2,6 +2,11 @@ extends Node2D
 
 onready var bullet_scene = preload("res://Scenes/bulletBlue3_outline.tscn")
 
+#To DO:
+#Dmg is server site
+#Replace instancing with Pooling
+
+
 var shoot_per_seconds = 1
 sync var cool_down_timer = float(1) / shoot_per_seconds
 

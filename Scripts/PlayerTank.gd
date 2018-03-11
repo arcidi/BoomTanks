@@ -29,9 +29,8 @@ func _process(delta):
 		if hp <= 0:
 			rpc("destroy")
 
-slave func destroy():
-	#print("Im destroyed!" + get_name())
-	pass
+sync func destroy():
+	queue_free()
 
 func _physics_process(delta):
 	#procces input
@@ -51,9 +50,8 @@ func _physics_process(delta):
 			velocity.y += acceleration * delta
 		if is_brake_pressed:
 			velocity.y -= acceleration * delta
-	else: brake(2, delta)
-	
-	
+	else: 
+		brake(2, delta)
 	
 	velocity = Vector2(0, clamp(velocity.y, -max_velocity, max_velocity))
 	move_and_collide(velocity.rotated(rotation))
