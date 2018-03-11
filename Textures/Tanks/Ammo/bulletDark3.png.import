@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/bulletDark3.png-efa4208f4beae214fff4a9cc78b8b328.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Ammo/bulletDark3.png"
+source_md5="e9bb9e96570fdfd0df8dd0043d43bae8"
+
+dest_files=[ "res://.import/bulletDark3.png-efa4208f4beae214fff4a9cc78b8b328.stex" ]
+dest_md5="6971db72a4af2d0181f248f918469759"
+
 [params]
 
 compress/mode=0

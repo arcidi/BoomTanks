@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/crateWood.png-c3b3a7210ccea640f4b396553ff9d1e9.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/crateWood.png"
+source_md5="ab28024cdcf2cec65bc8fe173be312c8"
+
+dest_files=[ "res://.import/crateWood.png-c3b3a7210ccea640f4b396553ff9d1e9.stex" ]
+dest_md5="dfa99bf60a4eec22ab5970b17fa18af2"
+
 [params]
 
 compress/mode=0

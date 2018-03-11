@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/barrelRed_side.png-76d270f77f226d4ce8e00dd273f5062a.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/barrelRed_side.png"
+source_md5="2ab30b3844eb0ef3dc493bc6b3cad185"
+
+dest_files=[ "res://.import/barrelRed_side.png-76d270f77f226d4ce8e00dd273f5062a.stex" ]
+dest_md5="d5347f5c5e0f440373f5e4f75bf03655"
+
 [params]
 
 compress/mode=0

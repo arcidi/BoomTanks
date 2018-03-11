@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tileGrass_roadCrossingRound.png-5b4c828267bb97a047c83085ff8d59bf.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/Tiles/tileGrass_roadCrossingRound.png"
+source_md5="4611ea1852dc49767f31782aec6d42da"
+
+dest_files=[ "res://.import/tileGrass_roadCrossingRound.png-5b4c828267bb97a047c83085ff8d59bf.stex" ]
+dest_md5="bc950d020ec7c597fd416a13a80bf551"
+
 [params]
 
 compress/mode=0

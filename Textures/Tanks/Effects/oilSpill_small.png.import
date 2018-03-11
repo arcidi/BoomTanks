@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/oilSpill_small.png-f25b46dcdf3939ec7ba57618014946bf.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Effects/oilSpill_small.png"
+source_md5="7c0682de1754efb588255a6161bd0a6d"
+
+dest_files=[ "res://.import/oilSpill_small.png-f25b46dcdf3939ec7ba57618014946bf.stex" ]
+dest_md5="d13496891aca1dd482147f0f3ce30a1e"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/wireCrooked.png-a2427ab9d708c454d9e2788597d76932.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/wireCrooked.png"
+source_md5="f577b76419dce490bcc51905b37c47bd"
+
+dest_files=[ "res://.import/wireCrooked.png-a2427ab9d708c454d9e2788597d76932.stex" ]
+dest_md5="81211502689bb2c2f9cbfa947ef7ff7a"
+
 [params]
 
 compress/mode=0

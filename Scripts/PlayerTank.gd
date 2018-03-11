@@ -8,7 +8,7 @@ extends KinematicBody2D
 
 sync var velocity = Vector2(0,0)
 var rotation_speed = 2
-var max_velocity = 3
+var max_velocity = 5
 var acceleration = 2
 var hp = 100
 

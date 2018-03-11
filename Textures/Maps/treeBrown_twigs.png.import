@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/treeBrown_twigs.png-74cb87eb56e2700c19e2d98ff3686767.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/treeBrown_twigs.png"
+source_md5="a89b211adfe7ad78fc4fe176bb96d79a"
+
+dest_files=[ "res://.import/treeBrown_twigs.png-74cb87eb56e2700c19e2d98ff3686767.stex" ]
+dest_md5="d8534cf1a3e2aac2ad637c8e50d455a9"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/barrelRust_top.png-3ab411c8bc4ad188043eb51146c676f6.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/barrelRust_top.png"
+source_md5="997efae99651017dc3be38686944d4e3"
+
+dest_files=[ "res://.import/barrelRust_top.png-3ab411c8bc4ad188043eb51146c676f6.stex" ]
+dest_md5="e774adbc83357abf0e51d0d96f9a3795"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/shotOrange.png-088b36a5147787fa66b11e7ba06cf0e1.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Effects/shotOrange.png"
+source_md5="1278f23c6e01b07c979767051653eef9"
+
+dest_files=[ "res://.import/shotOrange.png-088b36a5147787fa66b11e7ba06cf0e1.stex" ]
+dest_md5="6c31724a04436d18366af6e8852bdda3"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/red_button02.png-947d71cc1042f6ec75dd9a772e99fd3d.stex"
 
+[deps]
+
+source_file="res://Textures/UI/red_button02.png"
+source_md5="b75488e474de2fee1d5f0955200f0a93"
+
+dest_files=[ "res://.import/red_button02.png-947d71cc1042f6ec75dd9a772e99fd3d.stex" ]
+dest_md5="1c3ac992bec928631f5510619c61bc9f"
+
 [params]
 
 compress/mode=0

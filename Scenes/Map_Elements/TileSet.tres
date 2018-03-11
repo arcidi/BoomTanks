@@ -1,0 +1,366 @@
+[gd_resource type="TileSet" load_steps=41 format=2]
+
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass1.png" type="Texture" id=1]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass2.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitE.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitN.png" type="Texture" id=4]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitS.png" type="Texture" id=5]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitW.png" type="Texture" id=6]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionE.png" type="Texture" id=7]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionE_dirt.png" type="Texture" id=8]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionN.png" type="Texture" id=9]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionN_dirt.png" type="Texture" id=10]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionS.png" type="Texture" id=11]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionS_dirt.png" type="Texture" id=12]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerLL.png" type="Texture" id=13]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionW.png" type="Texture" id=14]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionW_dirt.png" type="Texture" id=15]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionE.png" type="Texture" id=16]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionN.png" type="Texture" id=17]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionS.png" type="Texture" id=18]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionW.png" type="Texture" id=19]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand1.png" type="Texture" id=20]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand2.png" type="Texture" id=21]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerLL.png" type="Texture" id=22]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerLR.png" type="Texture" id=23]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerLR.png" type="Texture" id=24]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerUL.png" type="Texture" id=25]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerUR.png" type="Texture" id=26]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCrossing.png" type="Texture" id=27]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCrossingRound.png" type="Texture" id=28]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadEast.png" type="Texture" id=29]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadNorth.png" type="Texture" id=30]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitE.png" type="Texture" id=31]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitN.png" type="Texture" id=32]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitS.png" type="Texture" id=33]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitW.png" type="Texture" id=34]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerUL.png" type="Texture" id=35]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerUR.png" type="Texture" id=36]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossing.png" type="Texture" id=37]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossingRound.png" type="Texture" id=38]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadEast.png" type="Texture" id=39]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadNorth.png" type="Texture" id=40]
+
+[resource]
+
+0/name = "tileGrass1"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 128, 128 )
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+1/name = "tileGrass2"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 128, 128 )
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [  ]
+2/name = "tileGrass_roadCornerLL"
+2/texture = ExtResource( 13 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 128, 128 )
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shapes = [  ]
+3/name = "tileGrass_roadCornerLR"
+3/texture = ExtResource( 24 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 128, 128 )
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shapes = [  ]
+4/name = "tileGrass_roadCornerUL"
+4/texture = ExtResource( 35 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 128, 128 )
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shapes = [  ]
+5/name = "tileGrass_roadCornerUR"
+5/texture = ExtResource( 36 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 128, 128 )
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shapes = [  ]
+6/name = "tileGrass_roadCrossing"
+6/texture = ExtResource( 37 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 128, 128 )
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shapes = [  ]
+7/name = "tileGrass_roadCrossingRound"
+7/texture = ExtResource( 38 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 128, 128 )
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shapes = [  ]
+8/name = "tileGrass_roadEast"
+8/texture = ExtResource( 39 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 128, 128 )
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shapes = [  ]
+9/name = "tileGrass_roadNorth"
+9/texture = ExtResource( 40 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 128, 128 )
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shapes = [  ]
+10/name = "tileGrass_roadSplitE"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 128, 128 )
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shapes = [  ]
+11/name = "tileGrass_roadSplitN"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 128, 128 )
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shapes = [  ]
+12/name = "tileGrass_roadSplitS"
+12/texture = ExtResource( 5 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 128, 128 )
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shapes = [  ]
+13/name = "tileGrass_roadSplitW"
+13/texture = ExtResource( 6 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 128, 128 )
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shapes = [  ]
+14/name = "tileGrass_roadTransitionE"
+14/texture = ExtResource( 7 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 128, 128 )
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shapes = [  ]
+15/name = "tileGrass_roadTransitionE_dirt"
+15/texture = ExtResource( 8 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 128, 128 )
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shapes = [  ]
+16/name = "tileGrass_roadTransitionN"
+16/texture = ExtResource( 9 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 0, 128, 128 )
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shapes = [  ]
+17/name = "tileGrass_roadTransitionN_dirt"
+17/texture = ExtResource( 10 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 0, 0, 128, 128 )
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shapes = [  ]
+18/name = "tileGrass_roadTransitionS"
+18/texture = ExtResource( 11 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 0, 0, 128, 128 )
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shapes = [  ]
+19/name = "tileGrass_roadTransitionS_dirt"
+19/texture = ExtResource( 12 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 0, 0, 128, 128 )
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shapes = [  ]
+20/name = "tileGrass_roadTransitionW"
+20/texture = ExtResource( 14 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 0, 0, 128, 128 )
+20/occluder_offset = Vector2( 0, 0 )
+20/navigation_offset = Vector2( 0, 0 )
+20/shapes = [  ]
+21/name = "tileGrass_roadTransitionW_dirt"
+21/texture = ExtResource( 15 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 0, 0, 128, 128 )
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/shapes = [  ]
+22/name = "tileGrass_transitionE"
+22/texture = ExtResource( 16 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 0, 0, 128, 128 )
+22/occluder_offset = Vector2( 0, 0 )
+22/navigation_offset = Vector2( 0, 0 )
+22/shapes = [  ]
+23/name = "tileGrass_transitionN"
+23/texture = ExtResource( 17 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 0, 0, 128, 128 )
+23/occluder_offset = Vector2( 0, 0 )
+23/navigation_offset = Vector2( 0, 0 )
+23/shapes = [  ]
+24/name = "tileGrass_transitionS"
+24/texture = ExtResource( 18 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 0, 0, 128, 128 )
+24/occluder_offset = Vector2( 0, 0 )
+24/navigation_offset = Vector2( 0, 0 )
+24/shapes = [  ]
+25/name = "tileGrass_transitionW"
+25/texture = ExtResource( 19 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 0, 0, 128, 128 )
+25/occluder_offset = Vector2( 0, 0 )
+25/navigation_offset = Vector2( 0, 0 )
+25/shapes = [  ]
+26/name = "tileSand1"
+26/texture = ExtResource( 20 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 0, 0, 128, 128 )
+26/occluder_offset = Vector2( 0, 0 )
+26/navigation_offset = Vector2( 0, 0 )
+26/shapes = [  ]
+27/name = "tileSand2"
+27/texture = ExtResource( 21 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 0, 0, 128, 128 )
+27/occluder_offset = Vector2( 0, 0 )
+27/navigation_offset = Vector2( 0, 0 )
+27/shapes = [  ]
+28/name = "tileSand_roadCornerLL"
+28/texture = ExtResource( 22 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 0, 0, 128, 128 )
+28/occluder_offset = Vector2( 0, 0 )
+28/navigation_offset = Vector2( 0, 0 )
+28/shapes = [  ]
+29/name = "tileSand_roadCornerLR"
+29/texture = ExtResource( 23 )
+29/tex_offset = Vector2( 0, 0 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 0, 0, 128, 128 )
+29/occluder_offset = Vector2( 0, 0 )
+29/navigation_offset = Vector2( 0, 0 )
+29/shapes = [  ]
+30/name = "tileSand_roadCornerUL"
+30/texture = ExtResource( 25 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 0, 0, 128, 128 )
+30/occluder_offset = Vector2( 0, 0 )
+30/navigation_offset = Vector2( 0, 0 )
+30/shapes = [  ]
+31/name = "tileSand_roadCornerUR"
+31/texture = ExtResource( 26 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 0, 0, 128, 128 )
+31/occluder_offset = Vector2( 0, 0 )
+31/navigation_offset = Vector2( 0, 0 )
+31/shapes = [  ]
+32/name = "tileSand_roadCrossing"
+32/texture = ExtResource( 27 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 0, 0, 128, 128 )
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shapes = [  ]
+33/name = "tileSand_roadCrossingRound"
+33/texture = ExtResource( 28 )
+33/tex_offset = Vector2( 0, 0 )
+33/modulate = Color( 1, 1, 1, 1 )
+33/region = Rect2( 0, 0, 128, 128 )
+33/occluder_offset = Vector2( 0, 0 )
+33/navigation_offset = Vector2( 0, 0 )
+33/shapes = [  ]
+34/name = "tileSand_roadEast"
+34/texture = ExtResource( 29 )
+34/tex_offset = Vector2( 0, 0 )
+34/modulate = Color( 1, 1, 1, 1 )
+34/region = Rect2( 0, 0, 128, 128 )
+34/occluder_offset = Vector2( 0, 0 )
+34/navigation_offset = Vector2( 0, 0 )
+34/shapes = [  ]
+35/name = "tileSand_roadNorth"
+35/texture = ExtResource( 30 )
+35/tex_offset = Vector2( 0, 0 )
+35/modulate = Color( 1, 1, 1, 1 )
+35/region = Rect2( 0, 0, 128, 128 )
+35/occluder_offset = Vector2( 0, 0 )
+35/navigation_offset = Vector2( 0, 0 )
+35/shapes = [  ]
+36/name = "tileSand_roadSplitE"
+36/texture = ExtResource( 31 )
+36/tex_offset = Vector2( 0, 0 )
+36/modulate = Color( 1, 1, 1, 1 )
+36/region = Rect2( 0, 0, 128, 128 )
+36/occluder_offset = Vector2( 0, 0 )
+36/navigation_offset = Vector2( 0, 0 )
+36/shapes = [  ]
+37/name = "tileSand_roadSplitN"
+37/texture = ExtResource( 32 )
+37/tex_offset = Vector2( 0, 0 )
+37/modulate = Color( 1, 1, 1, 1 )
+37/region = Rect2( 0, 0, 128, 128 )
+37/occluder_offset = Vector2( 0, 0 )
+37/navigation_offset = Vector2( 0, 0 )
+37/shapes = [  ]
+38/name = "tileSand_roadSplitS"
+38/texture = ExtResource( 33 )
+38/tex_offset = Vector2( 0, 0 )
+38/modulate = Color( 1, 1, 1, 1 )
+38/region = Rect2( 0, 0, 128, 128 )
+38/occluder_offset = Vector2( 0, 0 )
+38/navigation_offset = Vector2( 0, 0 )
+38/shapes = [  ]
+39/name = "tileSand_roadSplitW"
+39/texture = ExtResource( 34 )
+39/tex_offset = Vector2( 0, 0 )
+39/modulate = Color( 1, 1, 1, 1 )
+39/region = Rect2( 0, 0, 128, 128 )
+39/occluder_offset = Vector2( 0, 0 )
+39/navigation_offset = Vector2( 0, 0 )
+39/shapes = [  ]
+

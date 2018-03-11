@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tileSand_roadCornerLR.png-37c6ed8a0caf90fc6ad0b5235729167c.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/Tiles/tileSand_roadCornerLR.png"
+source_md5="e293b4c7585ae6893601dc23ea767bd9"
+
+dest_files=[ "res://.import/tileSand_roadCornerLR.png-37c6ed8a0caf90fc6ad0b5235729167c.stex" ]
+dest_md5="a1d801255c18dbbf0856dd1535576cc4"
+
 [params]
 
 compress/mode=0

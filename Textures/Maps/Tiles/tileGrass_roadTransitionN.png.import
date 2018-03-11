@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tileGrass_roadTransitionN.png-3e72762814d558dee73b18062d42ab7a.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/Tiles/tileGrass_roadTransitionN.png"
+source_md5="fe19db143d0ad380a4cc1997a66dcf25"
+
+dest_files=[ "res://.import/tileGrass_roadTransitionN.png-3e72762814d558dee73b18062d42ab7a.stex" ]
+dest_md5="3e70afc4c3d9d74f12128f4b0dba216a"
+
 [params]
 
 compress/mode=0

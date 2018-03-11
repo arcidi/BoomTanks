@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/yellow_cross.png-ec6de88748e20487a2315564584e86c4.stex"
 
+[deps]
+
+source_file="res://Textures/UI/yellow_cross.png"
+source_md5="52712c3ce996b73a89c74304ea8c882b"
+
+dest_files=[ "res://.import/yellow_cross.png-ec6de88748e20487a2315564584e86c4.stex" ]
+dest_md5="64023b78fa8c5a9e917ccf3bfa2246c3"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tileGrass_roadSplitW.png-f89ab80d0083c42712b8438ce8e247b7.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/Tiles/tileGrass_roadSplitW.png"
+source_md5="514337954ed3faac04758a659fd24fd6"
+
+dest_files=[ "res://.import/tileGrass_roadSplitW.png-f89ab80d0083c42712b8438ce8e247b7.stex" ]
+dest_md5="51434ab7f592f70629bcc683bde516cc"
+
 [params]
 
 compress/mode=0

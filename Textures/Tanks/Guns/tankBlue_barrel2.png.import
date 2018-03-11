@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tankBlue_barrel2.png-4f44b26897c68e7e70d1490a32cf4dd2.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Guns/tankBlue_barrel2.png"
+source_md5="26af90bb824eb25f7c85923e41a723d1"
+
+dest_files=[ "res://.import/tankBlue_barrel2.png-4f44b26897c68e7e70d1490a32cf4dd2.stex" ]
+dest_md5="8915550f7289e97e2f7ea1ce0eb53ff0"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/grey_tickGrey.png-c0d8d534f76681b9fbc820df5396404d.stex"
 
+[deps]
+
+source_file="res://Textures/UI/grey_tickGrey.png"
+source_md5="0d874e5265b833e24dd558c30af3496e"
+
+dest_files=[ "res://.import/grey_tickGrey.png-c0d8d534f76681b9fbc820df5396404d.stex" ]
+dest_md5="11db8903e820a39a35a43c8d4a13d970"
+
 [params]
 
 compress/mode=0

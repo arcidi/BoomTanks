@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/grey_button12.png-0ab69ed217be3e2035f794d752beadd6.stex"
 
+[deps]
+
+source_file="res://Textures/UI/grey_button12.png"
+source_md5="9d2c4099fe178edf1dc7fabf9e5dc955"
+
+dest_files=[ "res://.import/grey_button12.png-0ab69ed217be3e2035f794d752beadd6.stex" ]
+dest_md5="bfe87b1bca3fd6d1ee4ea955fddc1803"
+
 [params]
 
 compress/mode=0

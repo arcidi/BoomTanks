@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tracksDouble.png-0d4ac9d3aa78d37c6b73798521f7f916.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Effects/tracksDouble.png"
+source_md5="272ea9db1823dfaa3330f2ec7e56cb67"
+
+dest_files=[ "res://.import/tracksDouble.png-0d4ac9d3aa78d37c6b73798521f7f916.stex" ]
+dest_md5="c930233053f74db640b06700e9fc2dc5"
+
 [params]
 
 compress/mode=0

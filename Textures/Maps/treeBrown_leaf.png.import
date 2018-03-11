@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/treeBrown_leaf.png-468f08648dacb866e116a3f55a6e162b.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/treeBrown_leaf.png"
+source_md5="31c13d65686d70567fce8a1140d17537"
+
+dest_files=[ "res://.import/treeBrown_leaf.png-468f08648dacb866e116a3f55a6e162b.stex" ]
+dest_md5="fad79f431056f6647b21475f87fd2dda"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tankBody_green_outline.png-c7e09771e61e48a4697beb65d7904b46.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Body/tankBody_green_outline.png"
+source_md5="c2f1e169e93eb92e7e825c9ad8749c36"
+
+dest_files=[ "res://.import/tankBody_green_outline.png-c7e09771e61e48a4697beb65d7904b46.stex" ]
+dest_md5="d90072aabd1f074e981793b478a20b77"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/red car.png-67111110e0c32bcd94626cb694c1b874.stex"
 
+[deps]
+
+source_file="res://Textures/red car.png"
+source_md5="c021498fcced42a66cee36eee1553f62"
+
+dest_files=[ "res://.import/red car.png-67111110e0c32bcd94626cb694c1b874.stex" ]
+dest_md5="9317a6ef0b17c819f91251974adf1078"
+
 [params]
 
 compress/mode=0

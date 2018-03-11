@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/bulletSand1.png-d03738a543b192718cd53f2bfbef0585.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Ammo/bulletSand1.png"
+source_md5="9c75ab8b6b9ef7527c59544747653c2f"
+
+dest_files=[ "res://.import/bulletSand1.png-d03738a543b192718cd53f2bfbef0585.stex" ]
+dest_md5="070bd7297217cc5674a92f239655ae7f"
+
 [params]
 
 compress/mode=0

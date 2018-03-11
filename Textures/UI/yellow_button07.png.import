@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/yellow_button07.png-1efac868bb46fc7f43c241c7e96f3320.stex"
 
+[deps]
+
+source_file="res://Textures/UI/yellow_button07.png"
+source_md5="58a7d085c97a59b38449d681a3f6cba4"
+
+dest_files=[ "res://.import/yellow_button07.png-1efac868bb46fc7f43c241c7e96f3320.stex" ]
+dest_md5="3d0a1ab51928a9a8959fabd9a2d937b8"
+
 [params]
 
 compress/mode=0

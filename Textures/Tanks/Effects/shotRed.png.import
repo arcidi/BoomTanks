@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/shotRed.png-0a8c52d665ec3c8ec20f887f9bb87f34.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Effects/shotRed.png"
+source_md5="1410e770c7a27aff4d0e8ce8c74cfd6c"
+
+dest_files=[ "res://.import/shotRed.png-0a8c52d665ec3c8ec20f887f9bb87f34.stex" ]
+dest_md5="f76fc48795ba85fd276606acb6c099e7"
+
 [params]
 
 compress/mode=0

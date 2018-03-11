@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/barricadeWood.png-4b6a5aa8a7009c7e7f4e2217866e92c6.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/barricadeWood.png"
+source_md5="b9c181b5052b9384814e881c8d92ba94"
+
+dest_files=[ "res://.import/barricadeWood.png-4b6a5aa8a7009c7e7f4e2217866e92c6.stex" ]
+dest_md5="2eb9cc13f7aaf53608c9ee5433e11457"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/yellow_checkmark.png-c20332c60ce9762d9700e44bedef6b25.stex"
 
+[deps]
+
+source_file="res://Textures/UI/yellow_checkmark.png"
+source_md5="87ac57843e13f2833d297282f782ae4c"
+
+dest_files=[ "res://.import/yellow_checkmark.png-c20332c60ce9762d9700e44bedef6b25.stex" ]
+dest_md5="03cef5c82c3875098dac0a87bef9d363"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/sandbagBrown.png-1af9e100704775f7e30568950fc480db.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/sandbagBrown.png"
+source_md5="f8d257e254a3c1c4ca3dd8356d8876c4"
+
+dest_files=[ "res://.import/sandbagBrown.png-1af9e100704775f7e30568950fc480db.stex" ]
+dest_md5="578c904415c7eaf23f73b9044b1ac746"
+
 [params]
 
 compress/mode=0

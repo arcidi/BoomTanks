@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/barricadeMetal.png-a99069b3621b99cc0abf0ff321fa313c.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/barricadeMetal.png"
+source_md5="06e89f30cf546003c39347301f92d8e7"
+
+dest_files=[ "res://.import/barricadeMetal.png-a99069b3621b99cc0abf0ff321fa313c.stex" ]
+dest_md5="fd26fbeab4a7e8b618ea522c5a9e9675"
+
 [params]
 
 compress/mode=0

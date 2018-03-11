@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/explosion4.png-e5278033d9068dc7b82f08c06514622b.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Effects/explosion4.png"
+source_md5="0f23b31539d4515be37aeb263a5ece75"
+
+dest_files=[ "res://.import/explosion4.png-e5278033d9068dc7b82f08c06514622b.stex" ]
+dest_md5="cb39195e65db5488d6a153a8daa05a0a"
+
 [params]
 
 compress/mode=0

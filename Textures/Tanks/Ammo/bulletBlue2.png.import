@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/bulletBlue2.png-aeb0cd4c7531dac9cbc1e33d510c1fad.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Ammo/bulletBlue2.png"
+source_md5="23aa5d81e9364eb31ada08ce107da92e"
+
+dest_files=[ "res://.import/bulletBlue2.png-aeb0cd4c7531dac9cbc1e33d510c1fad.stex" ]
+dest_md5="cd322223331a2ff99dc96cc22596c94a"
+
 [params]
 
 compress/mode=0

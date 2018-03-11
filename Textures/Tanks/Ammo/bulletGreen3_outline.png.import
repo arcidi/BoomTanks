@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/bulletGreen3_outline.png-9f44e19d6a809f64d8d546a440cfeae7.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Ammo/bulletGreen3_outline.png"
+source_md5="e74af8d16c1745bba74b371124c67b7d"
+
+dest_files=[ "res://.import/bulletGreen3_outline.png-9f44e19d6a809f64d8d546a440cfeae7.stex" ]
+dest_md5="52df0210cb0c6daa2f94ba94c4a3c7d5"
+
 [params]
 
 compress/mode=0

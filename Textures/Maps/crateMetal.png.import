@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/crateMetal.png-61ec4c0feb4264fba8134e1800f25d97.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/crateMetal.png"
+source_md5="6b8b919b225a2ccf4fe75d1bd5924c0a"
+
+dest_files=[ "res://.import/crateMetal.png-61ec4c0feb4264fba8134e1800f25d97.stex" ]
+dest_md5="2191fd9a1c711dca12f7b9a67051056d"
+
 [params]
 
 compress/mode=0

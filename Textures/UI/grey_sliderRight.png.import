@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/grey_sliderRight.png-6a0355ab407a40a577e17c0c1c932257.stex"
 
+[deps]
+
+source_file="res://Textures/UI/grey_sliderRight.png"
+source_md5="71ea4d81b29d622efce9184c5bd69226"
+
+dest_files=[ "res://.import/grey_sliderRight.png-6a0355ab407a40a577e17c0c1c932257.stex" ]
+dest_md5="6e3bf4a29eb8edc131bd0164761047b0"
+
 [params]
 
 compress/mode=0

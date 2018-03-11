@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/shotThin.png-a16da2e158e3a503a05d0841ee3ae051.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Effects/shotThin.png"
+source_md5="cfd486043d4e90f807ec74592f377e11"
+
+dest_files=[ "res://.import/shotThin.png-a16da2e158e3a503a05d0841ee3ae051.stex" ]
+dest_md5="7fdba8d70e3530e3c461912a814d38e6"
+
 [params]
 
 compress/mode=0

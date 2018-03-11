@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/treeBrown_large.png-c84a990f62fa20d9063b3406d14d0025.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/treeBrown_large.png"
+source_md5="bc100ad12e42b2488fe24bfc98b212d8"
+
+dest_files=[ "res://.import/treeBrown_large.png-c84a990f62fa20d9063b3406d14d0025.stex" ]
+dest_md5="b4085c098f700d450f1005440f22bc19"
+
 [params]
 
 compress/mode=0

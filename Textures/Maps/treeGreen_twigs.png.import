@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/treeGreen_twigs.png-81eb9051a03a735499bd156b3773d46d.stex"
 
+[deps]
+
+source_file="res://Textures/Maps/treeGreen_twigs.png"
+source_md5="0735eda2ebfb8c62e837f7e4a10d7f25"
+
+dest_files=[ "res://.import/treeGreen_twigs.png-81eb9051a03a735499bd156b3773d46d.stex" ]
+dest_md5="8faf22c2576d23f64a8261492c595e25"
+
 [params]
 
 compress/mode=0

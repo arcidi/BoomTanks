@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/explosionSmoke2.png-a368b76793b79aa55c345e4ff8d158dc.stex"
 
+[deps]
+
+source_file="res://Textures/Tanks/Effects/explosionSmoke2.png"
+source_md5="2137e619f3877ef476d249dd48b70bd5"
+
+dest_files=[ "res://.import/explosionSmoke2.png-a368b76793b79aa55c345e4ff8d158dc.stex" ]
+dest_md5="b598204bb9ff8463e4b4a4f6820e9ab0"
+
 [params]
 
 compress/mode=0

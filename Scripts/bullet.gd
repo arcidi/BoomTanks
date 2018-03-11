@@ -1,9 +1,9 @@
 extends Area2D
 
-var velocity
+var velocity = Vector2(0,0)
 var speed
 var dmg
-var owner
+var master_of_bullet
 
 
 func _ready():
@@ -18,5 +18,5 @@ remote func update_position(trans):
 	global_transform = trans
 
 func _on_bulletBlue3_outline_body_entered( body ):
-	if str(body.get_network_master()) != owner && body.is_in_group("Player"):
+	if str(body.get_network_master()) != master_of_bullet && body.is_in_group("Player"):
 		queue_free()

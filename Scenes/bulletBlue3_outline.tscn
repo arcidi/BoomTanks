@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/bullet.gd" type="Script" id=1]
 [ext_resource path="res://Textures/Tanks/Ammo/bulletBlue3_outline.png" type="Texture" id=2]
 
-[node name="bulletBlue3_outline" type="Area2D"]
+[node name="bulletBlue3_outline" type="Area2D" index="0"]
 
 show_behind_parent = true
 rotation = 3.14159
@@ -17,12 +17,12 @@ audio_bus_name = "Master"
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform", "Visibility", "collision" ]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( 8.08416, 18.0303, 8.05658, -13.0291, 3.11907, -17.9666, -3.52863, -17.8839, -8.02479, -13.2222, -7.93403, 18.032 )
 
-[node name="bulletBlue3_outline" type="Sprite" parent="."]
+[node name="bulletBlue3_outline" type="Sprite" parent="." index="1"]
 
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform" ]

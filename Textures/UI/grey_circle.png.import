@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/grey_circle.png-86931bf7c629cf2d30c56c64736d6d57.stex"
 
+[deps]
+
+source_file="res://Textures/UI/grey_circle.png"
+source_md5="81854f64ba73b7046b92b6b9d270cf6b"
+
+dest_files=[ "res://.import/grey_circle.png-86931bf7c629cf2d30c56c64736d6d57.stex" ]
+dest_md5="c438c96b994076427482fccff061d2c7"
+
 [params]
 
 compress/mode=0

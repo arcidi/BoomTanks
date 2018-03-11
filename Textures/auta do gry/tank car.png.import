@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tank car.png-7a4de60253578cb8a6477d8a2de0b9e0.stex"
 
+[deps]
+
+source_file="res://Textures/auta do gry/tank car.png"
+source_md5="0a72edf7139c95f0ae9f986909062903"
+
+dest_files=[ "res://.import/tank car.png-7a4de60253578cb8a6477d8a2de0b9e0.stex" ]
+dest_md5="2f370fd5299a01665e72db744e08c9f8"
+
 [params]
 
 compress/mode=0

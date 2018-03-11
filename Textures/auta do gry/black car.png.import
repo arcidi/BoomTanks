@@ -4,6 +4,14 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/black car.png-988b040075e0c099bdf789a13efbf79f.stex"
 
+[deps]
+
+source_file="res://Textures/auta do gry/black car.png"
+source_md5="cc3daec5f117688a38503f511259fb7b"
+
+dest_files=[ "res://.import/black car.png-988b040075e0c099bdf789a13efbf79f.stex" ]
+dest_md5="97f9c84893fc1e26084f5f014c994286"
+
 [params]
 
 compress/mode=0
