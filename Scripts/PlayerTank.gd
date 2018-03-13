@@ -28,9 +28,14 @@ func _process(delta):
 		rset_unreliable("velocity", velocity)
 		if hp <= 0:
 			rpc("destroy")
+			rpc("on_master_destroy")
 
-sync func destroy():
+sync func destroy(): 
 	queue_free()
+
+
+master func on_master_destroy(): #If i died show me respawn panel
+	global.get_main_scene().get_node("Control/respawn_panel").visible = true
 
 func _physics_process(delta):
 	#procces input

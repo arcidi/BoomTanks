@@ -35,4 +35,4 @@ sync func spawn_bullet():
 		bullet.dmg = 25 # REPLACE IT!!!
 		bullet.master_of_bullet = get_parent().get_name()
 		cool_down_timer = float(1) / shoot_per_seconds
-		get_tree().get_root().add_child(bullet)
+		global.get_main_scene().add_child(bullet)

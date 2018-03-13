@@ -8,4 +8,5 @@ extends Control
 
 
 func _on_respawn_btn_pressed():
-	pass # replace with function body
+	player_manager.spawn_player_car(get_tree().get_network_unique_id())
+	visible = false

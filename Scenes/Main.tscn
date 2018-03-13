@@ -1,15 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Maps/TestMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/UI/lobby.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/UI/respawn_panel.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Main" type="Node" index="0"]
+[node name="Main" type="Node"]
 
 [node name="TestMap" parent="." index="0" instance=ExtResource( 1 )]
 
@@ -51,9 +52,15 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+_sections_unfolded = [ "Visibility" ]
 
 [node name="lobby" parent="Control" index="0" instance=ExtResource( 3 )]
 
 mouse_default_cursor_shape = 0
+
+[node name="respawn_panel" parent="Control" index="1" instance=ExtResource( 4 )]
+
+visible = false
+_sections_unfolded = [ "Visibility" ]
 
 

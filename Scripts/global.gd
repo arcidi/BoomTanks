@@ -4,11 +4,9 @@ extends Node
 
 var players_info = {}
 var playerPos = Vector2(0,0)
-var available_spawns = [] setget set_available_spawns, get_available_spawns
+var available_spawns = [] 
 
-func set_available_spawns(value):
-	available_spawns = value
 
-func get_available_spawns():
-	return available_spawns
-	available_spawns.remove[0]
+func get_main_scene():
+	var root = get_tree().get_root()
+	return root.get_child( root.get_child_count() -1 ) 

@@ -18,7 +18,7 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
-[node name="PlayerCar" type="KinematicBody2D" index="0" groups=[
+[node name="PlayerCar" type="KinematicBody2D" groups=[
 "Player",
 ]]
 

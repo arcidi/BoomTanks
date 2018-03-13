@@ -82,22 +82,21 @@ func _on_start_pressed():
 	#if get_tree().is_network_server(): #If i'am server start game
 	if !spawned:
 		rpc("spawn_players")
-		print("AYE")
 	#spawn_players()
 
-sync func spawn_player():
+sync func spawn_player(): #It is used somewhere?
 	var car = preload("res://Scenes/PlayerTank.tscn").instance()
 
 sync func spawn_players():
 	spawned = true
-	var x = 0
 	for player in global.players_info: #Spawn car for each player
-		x += 1
-		player_manager.spawn_player_car(player)
+		if player == get_tree().get_network_unique_id():
+			player_manager.spawn_player_car(player)
 
 remote func register_player(id, info):
 	# Store the info
 	global.players_info[id] = info
+	player_manager.player_id = id
 	
 	if (get_tree().is_network_server()): # If I'm the server, let the new guy know about existing players
 		rpc_id(id, "register_player", 1, my_info) # Send my info to new player
