@@ -1,11 +1,5 @@
 extends KinematicBody2D
 
-#Todo
-#Moevement
-#Input - player sends only float betwen -1 to 1 via rpc
-#Server sends rpc_unreliable position
-
-
 sync var velocity = Vector2(0,0)
 var rotation_speed = 2
 var max_velocity = 5
@@ -38,7 +32,7 @@ master func on_master_destroy(): #If i died show me respawn panel
 	global.get_main_scene().get_node("Control/respawn_panel").visible = true
 
 func _physics_process(delta):
-	#procces input
+	#Process input 
 	if is_left_pressed || is_right_pressed:
 		if is_left_pressed:
 			rotation -= clamp(velocity.y, rotation_speed, max_velocity) * delta

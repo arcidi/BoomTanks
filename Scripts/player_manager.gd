@@ -8,7 +8,7 @@ func _ready():
 
 
 
-remote func spawn_player_car(player_id):
+remote func spawn_player_car(player_id): #Spawn car for given player
 	var car = preload("res://Scenes/PlayerTank.tscn").instance()
 	car.set_name(str(player_id))
 	car.set_network_master(player_id)

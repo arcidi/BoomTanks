@@ -1,9 +1,9 @@
 extends Node2D
 
-onready var bullet_scene = preload("res://Scenes/bulletBlue3_outline.tscn")
+onready var bullet_scene = preload("res://Scenes/bullet.tscn")
 
 #To DO:
-#Dmg is server site
+#Make sure Dmg is server site
 #Replace instancing with Pooling
 
 
