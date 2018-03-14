@@ -5,27 +5,28 @@
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 12.0
+radius = 24.281
 
-[node name="barrelBlack_top" type="Sprite"]
+[node name="barrelBlack_top" type="Sprite" index="0"]
 
-position = Vector2( 1792, 0 )
 texture = ExtResource( 1 )
 centered = false
+_sections_unfolded = [ "Transform" ]
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="0"]
 
 input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
 
-position = Vector2( 12, 12 )
+position = Vector2( 24, 24 )
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 

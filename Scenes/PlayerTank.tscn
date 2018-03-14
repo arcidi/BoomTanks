@@ -70,11 +70,11 @@ anchor_mode = 1
 rotating = false
 current = false
 zoom = Vector2( 1, 1 )
-limit_left = -10000000
-limit_top = -10000000
-limit_right = 10000000
-limit_bottom = 10000000
-limit_smoothed = false
+limit_left = 0
+limit_top = 0
+limit_right = 4224
+limit_bottom = 4224
+limit_smoothed = true
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 smoothing_enabled = true
@@ -88,7 +88,7 @@ drag_margin_bottom = 0.2
 editor_draw_screen = true
 editor_draw_limits = false
 editor_draw_drag_margin = false
-_sections_unfolded = [ "Smoothing" ]
+_sections_unfolded = [ "Limit", "Smoothing" ]
 
 [node name="Turret" parent="." index="4" instance=ExtResource( 4 )]
 

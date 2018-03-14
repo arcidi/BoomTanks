@@ -2,13 +2,13 @@
 
 [ext_resource path="res://Textures/Maps/barricadeWood.png" type="Texture" id=1]
 
-[node name="barricadeWood" type="Sprite"]
+[node name="barricadeWood" type="Sprite" index="0"]
 
-position = Vector2( 1536, 256 )
 texture = ExtResource( 1 )
 centered = false
+_sections_unfolded = [ "Transform" ]
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -18,9 +18,11 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" index="0"]
 
+scale = Vector2( 2, 2 )
 build_mode = 0
 polygon = PoolVector2Array( 0, 4, 4, 0, 9, 3, 12, 1, 19, 1, 20, 2, 22, 0, 25, 0, 28, 4, 24, 10, 26, 13, 26, 19, 25, 19, 28, 22, 28, 25, 24, 28, 20, 26, 16, 28, 11, 28, 8, 26, 6, 28, 3, 28, 0, 24, 0, 22, 7, 15, 1, 15, 1, 11, 4, 9 )
+_sections_unfolded = [ "Transform" ]
 
 

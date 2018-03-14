@@ -2,13 +2,13 @@
 
 [ext_resource path="res://Textures/Maps/barricadeMetal.png" type="Texture" id=1]
 
-[node name="barricadeMetal" type="Sprite"]
+[node name="barricadeMetal" type="Sprite" index="0"]
 
-position = Vector2( 1536, 384 )
 texture = ExtResource( 1 )
 centered = false
+_sections_unfolded = [ "Transform" ]
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -18,9 +18,11 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" index="0"]
 
+scale = Vector2( 2, 2 )
 build_mode = 0
 polygon = PoolVector2Array( 5, 0, 14, 8, 23, 0, 29, 4, 20, 15, 28, 22, 28, 25, 24, 28, 21, 28, 14, 21, 7, 28, 3, 28, 0, 24, 0, 22, 7, 14, 0, 5, 0, 3 )
+_sections_unfolded = [ "Transform" ]
 
 

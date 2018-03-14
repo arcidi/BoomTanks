@@ -1,45 +1,46 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Textures/Maps/Tiles/tileGrass1.png" type="Texture" id=1]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass2.png" type="Texture" id=2]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerLL.png" type="Texture" id=3]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerLR.png" type="Texture" id=4]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerUL.png" type="Texture" id=5]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerUR.png" type="Texture" id=6]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossing.png" type="Texture" id=7]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossingRound.png" type="Texture" id=8]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadEast.png" type="Texture" id=9]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadNorth.png" type="Texture" id=10]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitE.png" type="Texture" id=11]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitN.png" type="Texture" id=12]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitS.png" type="Texture" id=13]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitW.png" type="Texture" id=14]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionE.png" type="Texture" id=15]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionE_dirt.png" type="Texture" id=16]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionN.png" type="Texture" id=17]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionN_dirt.png" type="Texture" id=18]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionS.png" type="Texture" id=19]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionS_dirt.png" type="Texture" id=20]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionW.png" type="Texture" id=21]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionW_dirt.png" type="Texture" id=22]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionE.png" type="Texture" id=23]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionN.png" type="Texture" id=24]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionS.png" type="Texture" id=25]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionW.png" type="Texture" id=26]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand1.png" type="Texture" id=27]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand2.png" type="Texture" id=28]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerLL.png" type="Texture" id=29]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerLR.png" type="Texture" id=30]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerUL.png" type="Texture" id=31]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerUR.png" type="Texture" id=32]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCrossing.png" type="Texture" id=33]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCrossingRound.png" type="Texture" id=34]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadEast.png" type="Texture" id=35]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadNorth.png" type="Texture" id=36]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitE.png" type="Texture" id=37]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitN.png" type="Texture" id=38]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitS.png" type="Texture" id=39]
-[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitW.png" type="Texture" id=40]
+[ext_resource path="res://Textures/Maps/Tiles/terrainTiles_retina.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass2.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerLL.png" type="Texture" id=4]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerLR.png" type="Texture" id=5]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerUL.png" type="Texture" id=6]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerUR.png" type="Texture" id=7]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossing.png" type="Texture" id=8]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossingRound.png" type="Texture" id=9]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadEast.png" type="Texture" id=10]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadNorth.png" type="Texture" id=11]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitE.png" type="Texture" id=12]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitN.png" type="Texture" id=13]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitS.png" type="Texture" id=14]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadSplitW.png" type="Texture" id=15]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionE.png" type="Texture" id=16]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionE_dirt.png" type="Texture" id=17]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionN.png" type="Texture" id=18]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionN_dirt.png" type="Texture" id=19]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionS.png" type="Texture" id=20]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionS_dirt.png" type="Texture" id=21]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionW.png" type="Texture" id=22]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadTransitionW_dirt.png" type="Texture" id=23]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionE.png" type="Texture" id=24]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionN.png" type="Texture" id=25]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionS.png" type="Texture" id=26]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_transitionW.png" type="Texture" id=27]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand1.png" type="Texture" id=28]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand2.png" type="Texture" id=29]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerLL.png" type="Texture" id=30]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerLR.png" type="Texture" id=31]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerUL.png" type="Texture" id=32]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCornerUR.png" type="Texture" id=33]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCrossing.png" type="Texture" id=34]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadCrossingRound.png" type="Texture" id=35]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadEast.png" type="Texture" id=36]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadNorth.png" type="Texture" id=37]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitE.png" type="Texture" id=38]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitN.png" type="Texture" id=39]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitS.png" type="Texture" id=40]
+[ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitW.png" type="Texture" id=41]
 
 [node name="TileSet" type="Node"]
 
@@ -53,19 +54,29 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileGrass2" type="Sprite" parent="." index="1"]
+[node name="AutoTIle" type="Sprite" parent="." index="1"]
+
+position = Vector2( 2021.1, 1026.52 )
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="tileGrass2" type="Sprite" parent="." index="2"]
 
 position = Vector2( 1792, 768 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 centered = false
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileGrass_roadCornerLL" type="Sprite" parent="." index="2"]
+[node name="tileGrass_roadCornerLL" type="Sprite" parent="." index="3"]
 
 position = Vector2( 1792, 512 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -92,10 +103,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( -32, -20, -15, -19, -2, -13, 10, -4, 17, 9, 20, 25, 20, 32, -20, 32, -20, 26, -26, 21, -27, 20, -32, 20 )
 
-[node name="tileGrass_roadCornerLR" type="Sprite" parent="." index="3"]
+[node name="tileGrass_roadCornerLR" type="Sprite" parent="." index="4"]
 
 position = Vector2( 1792, 256 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -119,10 +130,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 12, 64, 13, 52, 18, 35, 32, 19, 48, 13, 64, 12, 64, 52, 59, 52, 54, 56, 52, 60, 52, 64 )
 
-[node name="tileGrass_roadCornerUL" type="Sprite" parent="." index="4"]
+[node name="tileGrass_roadCornerUL" type="Sprite" parent="." index="5"]
 
 position = Vector2( 1792, 0 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -146,10 +157,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 52, 18, 50, 31, 45, 43, 34, 50, 19, 52, 0, 12, 0, 11, 7, 5, 12, 0, 12 )
 
-[node name="tileGrass_roadCornerUR" type="Sprite" parent="." index="5"]
+[node name="tileGrass_roadCornerUR" type="Sprite" parent="." index="6"]
 
 position = Vector2( 1536, 1024 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -173,10 +184,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 14, 17, 20, 33, 33, 45, 53, 51, 64, 52, 64, 12, 57, 11, 53, 5, 52, 0 )
 
-[node name="tileGrass_roadCrossing" type="Sprite" parent="." index="6"]
+[node name="tileGrass_roadCrossing" type="Sprite" parent="." index="7"]
 
 position = Vector2( 1536, 768 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -200,10 +211,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 12, 12, 0, 12, 0, 52, 12, 52, 12, 64, 52, 64, 52, 52, 64, 52, 64, 12, 52, 12, 52, 0 )
 
-[node name="tileGrass_roadCrossingRound" type="Sprite" parent="." index="7"]
+[node name="tileGrass_roadCrossingRound" type="Sprite" parent="." index="8"]
 
 position = Vector2( 1536, 512 )
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -227,10 +238,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 12, 12, 0, 12, 0, 52, 7, 53, 12, 60, 12, 64, 52, 64, 51, 51, 64, 52, 64, 12, 57, 10, 53, 6, 52, 0 )
 
-[node name="tileGrass_roadEast" type="Sprite" parent="." index="8"]
+[node name="tileGrass_roadEast" type="Sprite" parent="." index="9"]
 
 position = Vector2( 1536, 256 )
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -254,10 +265,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 12, 64, 12, 64, 52, 0, 52 )
 
-[node name="tileGrass_roadNorth" type="Sprite" parent="." index="9"]
+[node name="tileGrass_roadNorth" type="Sprite" parent="." index="10"]
 
 position = Vector2( 1536, 0 )
-texture = ExtResource( 10 )
+texture = ExtResource( 11 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -281,10 +292,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 12, 64, 52, 64, 52, 0 )
 
-[node name="tileGrass_roadSplitE" type="Sprite" parent="." index="10"]
+[node name="tileGrass_roadSplitE" type="Sprite" parent="." index="11"]
 
 position = Vector2( 1280, 1024 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -308,10 +319,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 52, 64, 52, 52, 64, 52, 64, 12, 52, 12, 52, 0, 12, 0, 12, 64 )
 
-[node name="tileGrass_roadSplitN" type="Sprite" parent="." index="11"]
+[node name="tileGrass_roadSplitN" type="Sprite" parent="." index="12"]
 
 position = Vector2( 1024, 1024 )
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -335,10 +346,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 52, 64, 52, 64, 12, 52, 12, 52, 0, 12, 0, 12, 12, 0, 12 )
 
-[node name="tileGrass_roadSplitS" type="Sprite" parent="." index="12"]
+[node name="tileGrass_roadSplitS" type="Sprite" parent="." index="13"]
 
 position = Vector2( 768, 1024 )
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -362,10 +373,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 12, 64, 12, 64, 52, 52, 52, 52, 64, 12, 64, 12, 52, 0, 52 )
 
-[node name="tileGrass_roadSplitW" type="Sprite" parent="." index="13"]
+[node name="tileGrass_roadSplitW" type="Sprite" parent="." index="14"]
 
 position = Vector2( 512, 1024 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -389,10 +400,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 12, 12, 0, 12, 0, 52, 12, 52, 12, 64, 52, 64, 52, 0 )
 
-[node name="tileGrass_roadTransitionE" type="Sprite" parent="." index="14"]
+[node name="tileGrass_roadTransitionE" type="Sprite" parent="." index="15"]
 
 position = Vector2( 256, 1024 )
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -416,10 +427,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 12, 64, 14, 64, 50, 0, 52 )
 
-[node name="tileGrass_roadTransitionE_dirt" type="Sprite" parent="." index="15"]
+[node name="tileGrass_roadTransitionE_dirt" type="Sprite" parent="." index="16"]
 
 position = Vector2( 0, 1024 )
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -443,10 +454,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 52, 64, 50, 64, 14, 0, 12 )
 
-[node name="tileGrass_roadTransitionN" type="Sprite" parent="." index="16"]
+[node name="tileGrass_roadTransitionN" type="Sprite" parent="." index="17"]
 
 position = Vector2( 1280, 768 )
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -470,10 +481,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 12, 64, 14, 0, 50, 0, 52, 64 )
 
-[node name="tileGrass_roadTransitionN_dirt" type="Sprite" parent="." index="17"]
+[node name="tileGrass_roadTransitionN_dirt" type="Sprite" parent="." index="18"]
 
 position = Vector2( 1024, 768 )
-texture = ExtResource( 18 )
+texture = ExtResource( 19 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -497,10 +508,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 12, 64, 14, 0, 50, 0, 52, 64 )
 
-[node name="tileGrass_roadTransitionS" type="Sprite" parent="." index="18"]
+[node name="tileGrass_roadTransitionS" type="Sprite" parent="." index="19"]
 
 position = Vector2( 768, 768 )
-texture = ExtResource( 19 )
+texture = ExtResource( 20 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -524,10 +535,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 14, 64, 12, 0, 52, 0, 50, 64 )
 
-[node name="tileGrass_roadTransitionS_dirt" type="Sprite" parent="." index="19"]
+[node name="tileGrass_roadTransitionS_dirt" type="Sprite" parent="." index="20"]
 
 position = Vector2( 512, 768 )
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -551,10 +562,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 12, 0, 14, 64, 50, 64, 52, 0 )
 
-[node name="tileGrass_roadTransitionW" type="Sprite" parent="." index="20"]
+[node name="tileGrass_roadTransitionW" type="Sprite" parent="." index="21"]
 
 position = Vector2( 256, 768 )
-texture = ExtResource( 21 )
+texture = ExtResource( 22 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -578,10 +589,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 64, 12, 64, 52, 0, 50 )
 
-[node name="tileGrass_roadTransitionW_dirt" type="Sprite" parent="." index="21"]
+[node name="tileGrass_roadTransitionW_dirt" type="Sprite" parent="." index="22"]
 
 position = Vector2( 0, 768 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -605,64 +616,64 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 64, 12, 64, 52, 0, 50 )
 
-[node name="tileGrass_transitionE" type="Sprite" parent="." index="22"]
+[node name="tileGrass_transitionE" type="Sprite" parent="." index="23"]
 
 position = Vector2( 1280, 512 )
-texture = ExtResource( 23 )
-centered = false
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="tileGrass_transitionN" type="Sprite" parent="." index="23"]
-
-position = Vector2( 1280, 256 )
 texture = ExtResource( 24 )
 centered = false
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileGrass_transitionS" type="Sprite" parent="." index="24"]
+[node name="tileGrass_transitionN" type="Sprite" parent="." index="24"]
 
-position = Vector2( 1280, 0 )
+position = Vector2( 1280, 256 )
 texture = ExtResource( 25 )
 centered = false
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileGrass_transitionW" type="Sprite" parent="." index="25"]
+[node name="tileGrass_transitionS" type="Sprite" parent="." index="25"]
 
-position = Vector2( 1024, 512 )
+position = Vector2( 1280, 0 )
 texture = ExtResource( 26 )
 centered = false
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileSand1" type="Sprite" parent="." index="26"]
+[node name="tileGrass_transitionW" type="Sprite" parent="." index="26"]
 
-position = Vector2( 768, 512 )
+position = Vector2( 1024, 512 )
 texture = ExtResource( 27 )
 centered = false
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileSand2" type="Sprite" parent="." index="27"]
+[node name="tileSand1" type="Sprite" parent="." index="27"]
 
-position = Vector2( 512, 512 )
+position = Vector2( 768, 512 )
 texture = ExtResource( 28 )
 centered = false
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="tileSand_roadCornerLL" type="Sprite" parent="." index="28"]
+[node name="tileSand2" type="Sprite" parent="." index="28"]
+
+position = Vector2( 512, 512 )
+texture = ExtResource( 29 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="tileSand_roadCornerLL" type="Sprite" parent="." index="29"]
 
 position = Vector2( 256, 512 )
-texture = ExtResource( 29 )
+texture = ExtResource( 30 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -690,10 +701,10 @@ build_mode = 0
 polygon = PoolVector2Array( -32, -20, -15, -19, -2, -13, 10, -4, 17, 9, 20, 25, 20, 32, -20, 32, -20, 26, -26, 21, -27, 20, -32, 20 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="tileSand_roadCornerLR" type="Sprite" parent="." index="29"]
+[node name="tileSand_roadCornerLR" type="Sprite" parent="." index="30"]
 
 position = Vector2( 0, 512 )
-texture = ExtResource( 30 )
+texture = ExtResource( 31 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -719,10 +730,10 @@ position = Vector2( -1, 1 )
 build_mode = 0
 polygon = PoolVector2Array( 12, 64, 13, 52, 18, 35, 32, 19, 48, 13, 64, 12, 64, 52, 59, 52, 54, 56, 52, 60, 52, 64 )
 
-[node name="tileSand_roadCornerUL" type="Sprite" parent="." index="30"]
+[node name="tileSand_roadCornerUL" type="Sprite" parent="." index="31"]
 
 position = Vector2( 1024, 0 )
-texture = ExtResource( 31 )
+texture = ExtResource( 32 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -746,10 +757,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 54, 29, 49, 47, 31, 54, 9, 55, 0, 11, 0, 8, 7, 0, 9 )
 
-[node name="tileSand_roadCornerUR" type="Sprite" parent="." index="31"]
+[node name="tileSand_roadCornerUR" type="Sprite" parent="." index="32"]
 
 position = Vector2( 1024, 256 )
-texture = ExtResource( 32 )
+texture = ExtResource( 33 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -773,10 +784,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 9, 0, 12, 23, 23, 41, 42, 52, 56, 55, 64, 55, 64, 9, 56, 7, 55, 0 )
 
-[node name="tileSand_roadCrossing" type="Sprite" parent="." index="32"]
+[node name="tileSand_roadCrossing" type="Sprite" parent="." index="33"]
 
 position = Vector2( 768, 256 )
-texture = ExtResource( 33 )
+texture = ExtResource( 34 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -800,10 +811,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 14, 0, 13, 14, 0, 14, 0, 50, 13, 51, 14, 64, 50, 64, 51, 51, 64, 50, 64, 14, 51, 13, 50, 0 )
 
-[node name="tileSand_roadCrossingRound" type="Sprite" parent="." index="33"]
+[node name="tileSand_roadCrossingRound" type="Sprite" parent="." index="34"]
 
 position = Vector2( 512, 256 )
-texture = ExtResource( 34 )
+texture = ExtResource( 35 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -827,10 +838,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 15, 15, 14, 0, 50, 0, 52, 8, 56, 12, 64, 14, 64, 50, 49, 49, 50, 64, 14, 64, 13, 57, 7, 52, 0, 50 )
 
-[node name="tileSand_roadEast" type="Sprite" parent="." index="34"]
+[node name="tileSand_roadEast" type="Sprite" parent="." index="35"]
 
 position = Vector2( 256, 256 )
-texture = ExtResource( 35 )
+texture = ExtResource( 36 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -854,10 +865,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 64, 14, 64, 50, 0, 50 )
 
-[node name="tileSand_roadNorth" type="Sprite" parent="." index="35"]
+[node name="tileSand_roadNorth" type="Sprite" parent="." index="36"]
 
 position = Vector2( 0, 256 )
-texture = ExtResource( 36 )
+texture = ExtResource( 37 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -881,9 +892,9 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 14, 0, 14, 64, 50, 64, 50, 0 )
 
-[node name="tileSand_roadSplitE" type="Sprite" parent="." index="36"]
+[node name="tileSand_roadSplitE" type="Sprite" parent="." index="37"]
 
-texture = ExtResource( 37 )
+texture = ExtResource( 38 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -907,10 +918,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 14, 64, 14, 0, 50, 0, 51, 13, 64, 14, 64, 50, 51, 51, 51, 64 )
 
-[node name="tileSand_roadSplitN" type="Sprite" parent="." index="37"]
+[node name="tileSand_roadSplitN" type="Sprite" parent="." index="38"]
 
 position = Vector2( 768, 0 )
-texture = ExtResource( 38 )
+texture = ExtResource( 39 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -934,10 +945,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 14, 0, 13, 13, 0, 14, 0, 50, 64, 50, 64, 14, 51, 13, 50, 0 )
 
-[node name="tileSand_roadSplitS" type="Sprite" parent="." index="38"]
+[node name="tileSand_roadSplitS" type="Sprite" parent="." index="39"]
 
 position = Vector2( 256, 0 )
-texture = ExtResource( 39 )
+texture = ExtResource( 40 )
 centered = false
 __meta__ = {
 "_edit_group_": true
@@ -961,10 +972,10 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 14, 64, 14, 64, 50, 51, 51, 50, 64, 14, 64, 13, 51, 0, 50 )
 
-[node name="tileSand_roadSplitW" type="Sprite" parent="." index="39"]
+[node name="tileSand_roadSplitW" type="Sprite" parent="." index="40"]
 
 position = Vector2( 512, 0 )
-texture = ExtResource( 40 )
+texture = ExtResource( 41 )
 centered = false
 __meta__ = {
 "_edit_group_": true

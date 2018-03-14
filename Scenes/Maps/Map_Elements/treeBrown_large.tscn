@@ -2,13 +2,13 @@
 
 [ext_resource path="res://Textures/Maps/treeBrown_large.png" type="Texture" id=1]
 
-[node name="treeBrown_large" type="Sprite"]
+[node name="treeBrown_large" type="Sprite" index="0"]
 
-position = Vector2( 1152, 128 )
 texture = ExtResource( 1 )
 centered = false
+_sections_unfolded = [ "Transform" ]
 
-[node name="Area2D2" type="Area2D" parent="."]
+[node name="Area2D2" type="Area2D" parent="." index="0"]
 
 position = Vector2( 0, -1 )
 input_pickable = true
@@ -19,9 +19,11 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D2"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D2" index="0"]
 
+scale = Vector2( 2, 2 )
 build_mode = 0
 polygon = PoolVector2Array( 13, 3, 23, 3, 28, 0, 37, 0, 41, 3, 50, 3, 57, 7, 61, 14, 61, 24, 64, 32, 61, 41, 61, 50, 57, 56, 49, 61, 40, 61, 35, 64, 28, 64, 24, 61, 15, 61, 7, 56, 3, 49, 2, 40, 0, 35, 0, 28, 3, 24, 3, 14, 6, 8 )
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 

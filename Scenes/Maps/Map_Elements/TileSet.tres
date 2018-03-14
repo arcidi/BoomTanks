@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=41 format=2]
+[gd_resource type="TileSet" load_steps=42 format=2]
 
 [ext_resource path="res://Textures/Maps/Tiles/tileGrass1.png" type="Texture" id=1]
 [ext_resource path="res://Textures/Maps/Tiles/tileGrass2.png" type="Texture" id=2]
@@ -35,11 +35,12 @@
 [ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitS.png" type="Texture" id=33]
 [ext_resource path="res://Textures/Maps/Tiles/tileSand_roadSplitW.png" type="Texture" id=34]
 [ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerUL.png" type="Texture" id=35]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerUR.png" type="Texture" id=36]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossing.png" type="Texture" id=37]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossingRound.png" type="Texture" id=38]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadEast.png" type="Texture" id=39]
-[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadNorth.png" type="Texture" id=40]
+[ext_resource path="res://Textures/Maps/Tiles/terrainTiles_retina.png" type="Texture" id=36]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCornerUR.png" type="Texture" id=37]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossing.png" type="Texture" id=38]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadCrossingRound.png" type="Texture" id=39]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadEast.png" type="Texture" id=40]
+[ext_resource path="res://Textures/Maps/Tiles/tileGrass_roadNorth.png" type="Texture" id=41]
 
 [resource]
 
@@ -89,7 +90,7 @@
 4/navigation_offset = Vector2( 0, 0 )
 4/shapes = [  ]
 5/name = "tileGrass_roadCornerUR"
-5/texture = ExtResource( 36 )
+5/texture = ExtResource( 37 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 0, 0, 128, 128 )
@@ -98,7 +99,7 @@
 5/navigation_offset = Vector2( 0, 0 )
 5/shapes = [  ]
 6/name = "tileGrass_roadCrossing"
-6/texture = ExtResource( 37 )
+6/texture = ExtResource( 38 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 0, 128, 128 )
@@ -107,7 +108,7 @@
 6/navigation_offset = Vector2( 0, 0 )
 6/shapes = [  ]
 7/name = "tileGrass_roadCrossingRound"
-7/texture = ExtResource( 38 )
+7/texture = ExtResource( 39 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 0, 0, 128, 128 )
@@ -116,7 +117,7 @@
 7/navigation_offset = Vector2( 0, 0 )
 7/shapes = [  ]
 8/name = "tileGrass_roadEast"
-8/texture = ExtResource( 39 )
+8/texture = ExtResource( 40 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 0, 0, 128, 128 )
@@ -125,7 +126,7 @@
 8/navigation_offset = Vector2( 0, 0 )
 8/shapes = [  ]
 9/name = "tileGrass_roadNorth"
-9/texture = ExtResource( 40 )
+9/texture = ExtResource( 41 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 0, 0, 128, 128 )
@@ -403,4 +404,22 @@
 39/occluder_offset = Vector2( 0, 0 )
 39/navigation_offset = Vector2( 0, 0 )
 39/shapes = [  ]
+40/name = "AutoTIle"
+40/texture = ExtResource( 36 )
+40/tex_offset = Vector2( 0, 0 )
+40/modulate = Color( 1, 1, 1, 1 )
+40/region = Rect2( 0, 0, 1280, 512 )
+40/is_autotile = true
+40/autotile/bitmask_mode = 1
+40/autotile/icon_coordinate = Vector2( 2, 0 )
+40/autotile/tile_size = Vector2( 128, 128 )
+40/autotile/spacing = 0
+40/autotile/bitmask_flags = [ Vector2( 1, 0 ), 146, Vector2( 1, 1 ), 186, Vector2( 2, 0 ), 56, Vector2( 2, 1 ), 186, Vector2( 3, 0 ), 178, Vector2( 3, 1 ), 176, Vector2( 4, 0 ), 154, Vector2( 4, 1 ), 152, Vector2( 5, 0 ), 58, Vector2( 5, 1 ), 50, Vector2( 6, 0 ), 184, Vector2( 6, 1 ), 26 ]
+40/autotile/occluder_map = [  ]
+40/autotile/navpoly_map = [  ]
+40/autotile/priority_map = [  ]
+40/occluder_offset = Vector2( 0, 0 )
+40/navigation_offset = Vector2( 0, 0 )
+40/shapes = [  ]
+_sections_unfolded = [ "40" ]
 
